@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class interaction : MonoBehaviour
+public class pickup : MonoBehaviour
 {
     // Decides whether or not this can be picked up.
     public bool canPickup = false;
