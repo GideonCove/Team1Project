@@ -2,23 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* 
+ * AUTHOR(S): Seth, Gideon, Zach, Anthony
+ * DATE OF CREATION: 10/22/2019
+ * SCENE(S) WHERE USED: ALL
+ * OBJECT(S) WHERE USED: all objects that can be picked up
+ * DESCRIPTION: Allows the player to press "E" to pickup a highlighted(?) object and add it to their inventory.
+ */
+
 public class pickup : MonoBehaviour
 {
     // Decides whether or not this can be picked up.
     public bool canPickup = false;
 
+    // Imports the playerMovement script to keep track of inventory.
     playerMovement script;
     private bool isThere = false;
 
     private void OnTriggerStay(Collider player)
     {
+        // Assigns the specific script of the player's.
         script = player.GetComponent<playerMovement>();
 
+        // If the object is able to be picked up and "E" is pressed...
         if (canPickup && Input.GetKeyDown(KeyCode.E))
         {
             // Disables the mesh renderer.
             gameObject.GetComponent<MeshRenderer>().enabled = false;
 
+            // Checks to ensure the item picked up is not already in their inventory.
             for (int i = 0; i < script.inventory.Length; i++)
             {
                 if (script.inventory[i] == gameObject)
@@ -28,6 +40,7 @@ public class pickup : MonoBehaviour
                 }
             }
 
+            // If the item picked up is not already in inventory, add it.
             if (!isThere)
             {
                 AddObject(gameObject);
@@ -39,6 +52,7 @@ public class pickup : MonoBehaviour
     {
         bool itemAdded = false;
 
+        // Looks for empty space in the inventory at add the item. If there is none, abort the process.
         for (int i = 0; i < script.inventory.Length; i++)
         {
             if (script.inventory[i] == null)
