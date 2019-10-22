@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* 
+ * AUTHOR(S): Seth, Gideon, Zach, Anthony
+ * DATE OF CREATION: 10/9/2019
+ * SCENE(S) WHERE USED: ALL
+ * OBJECT(S) WHERE USED: player, player_camera
+ * DESCRIPTION: Allows the player's camera to be rotated along the x- and y-axes as well as allowing the player themselves to rotate.
+ */
+
 public class cameraRotation : MonoBehaviour
 {
     // Sensitivity for the movement looking horizontally (x-axis) and vertically (y-axis).
