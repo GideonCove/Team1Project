@@ -12,9 +12,6 @@ using UnityEngine;
 
 public class pickup : MonoBehaviour
 {
-    // Decides whether or not this can be picked up.
-    public bool canPickup = false;
-
     // Imports the playerMovement script to keep track of inventory.
     playerMovement script;
     private bool isThere = false;
@@ -25,7 +22,7 @@ public class pickup : MonoBehaviour
         script = player.GetComponent<playerMovement>();
 
         // If the object is able to be picked up and "E" is pressed...
-        if (canPickup && Input.GetKeyDown(KeyCode.E))
+        if (gameObject.CompareTag("pickup") && Input.GetKeyDown(KeyCode.E))
         {
             // Disables the mesh renderer.
             gameObject.GetComponent<MeshRenderer>().enabled = false;
