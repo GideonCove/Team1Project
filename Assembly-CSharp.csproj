@@ -62,8 +62,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Objects\pickup.cs" />
     <Compile Include="Assets\Scripts\Player\cameraRotation.cs" />
-    <Compile Include="Assets\Scripts\Player\pickup.cs" />
     <Compile Include="Assets\Scripts\Player\playerMovement.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>H:/Unity/Projects/amityvilleElementary/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
