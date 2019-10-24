@@ -4,5 +4,38 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/astronomy.unity
+    guid: ad86cada6f76b99438b119470d379f9e
+  - enabled: 1
+    path: Assets/Scenes/bathroom.unity
+    guid: 3ebfb60a874943a4ea2c3cfda33c23ac
+  - enabled: 1
+    path: Assets/Scenes/gym.unity
+    guid: df234c3bdf824074a9c4b2915a917a61
+  - enabled: 1
+    path: Assets/Scenes/lobbyOne.unity
+    guid: d75282417b14eb94f9fe7e2517d7e057
+  - enabled: 1
+    path: Assets/Scenes/lobbyTwo.unity
+    guid: 9ad35a7abab4b904591b22de8fcef7e6
+  - enabled: 1
+    path: Assets/Scenes/math.unity
+    guid: e3289d675d66dea46807213a9e498954
+  - enabled: 1
+    path: Assets/Scenes/music.unity
+    guid: 2f5b8cd1c0851d640a944f46760c53f9
+  - enabled: 1
+    path: Assets/Scenes/playground.unity
+    guid: b9bae513faa0cc940a1c06bfd74c26df
+  - enabled: 1
+    path: Assets/Scenes/principals.unity
+    guid: f5b91dafd23d98e4eb14c8e39c6464ee
+  - enabled: 1
+    path: Assets/Scenes/science.unity
+    guid: 345cd3b1b9dea294a8e4976a41c330dd
+  - enabled: 1
+    path: Assets/Scenes/testScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

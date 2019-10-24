@@ -15,17 +15,15 @@ public class door : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("Trigger detected");
+        Debug.Log("Hey what's up");
 
         if (gameObject.CompareTag("door"))
         {
-            Debug.Log("Does have door tag");
 
             guiObject.SetActive(true);
             if (guiObject.activeInHierarchy == true && Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("Hit E");
-
+                DontDestroyOnLoad(other);
                 SceneManager.LoadScene(nextLevel);
             }
         }
@@ -33,7 +31,6 @@ public class door : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("Trigger undetected");
 
         guiObject.SetActive(false);
     }
