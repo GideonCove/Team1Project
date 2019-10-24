@@ -13,13 +13,12 @@ using UnityEngine;
 public class pickup : MonoBehaviour
 {
     // Imports the playerMovement script to keep track of inventory.
-    playerMovement script;
     private bool isThere = false;
 
     private void OnTriggerStay(Collider player)
     {
         // Assigns the specific script of the player's.
-        script = player.GetComponent<playerMovement>();
+        // script = player.GetComponent<playerMovement>();
 
         // If the object is able to be picked up and "E" is pressed...
         if (gameObject.CompareTag("pickup") && Input.GetKeyDown(KeyCode.E))
@@ -28,9 +27,9 @@ public class pickup : MonoBehaviour
             gameObject.GetComponent<MeshRenderer>().enabled = false;
 
             // Checks to ensure the item picked up is not already in their inventory.
-            for (int i = 0; i < script.inventory.Length; i++)
+            for (int i = 0; i < playerMovement.inventory.Length; i++)
             {
-                if (script.inventory[i] == gameObject)
+                if (playerMovement.inventory[i] == gameObject)
                 {
                     isThere = true;
                     break;
@@ -50,11 +49,11 @@ public class pickup : MonoBehaviour
         bool itemAdded = false;
 
         // Looks for empty space in the inventory at add the item. If there is none, abort the process.
-        for (int i = 0; i < script.inventory.Length; i++)
+        for (int i = 0; i < playerMovement.inventory.Length; i++)
         {
-            if (script.inventory[i] == null)
+            if (playerMovement.inventory[i] == null)
             {
-                script.inventory[i] = itemToAdd;
+                playerMovement.inventory[i] = itemToAdd;
                 itemAdded = true;
                 Debug.Log(itemToAdd.name + "was added to inventory");
 

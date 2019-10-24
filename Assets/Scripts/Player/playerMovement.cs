@@ -13,7 +13,7 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     // GameObject array created for keeping inventory.
-    public GameObject[] inventory = new GameObject[12];
+    static public GameObject[] inventory = new GameObject[12];
 
     // This script is used to allow the arrow keys to move the player around the game world on the x and z-axes.
     public Vector3 xVector = new Vector3(1f, 0f, 0f);
