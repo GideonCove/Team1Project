@@ -439,7 +439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321121201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.763, y: 0.142, z: 3.374}
+  m_LocalPosition: {x: 2.763, y: 0.142, z: 3.25}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
@@ -456,6 +456,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bball_rack
+      objectReference: {fileID: 0}
+    - target: {fileID: -6347608555410904195, guid: c666613dde306504a88ffb59e710de42,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -30.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -6347608555410904195, guid: c666613dde306504a88ffb59e710de42,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c666613dde306504a88ffb59e710de42,
         type: 3}
@@ -541,16 +551,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 101.4
-      objectReference: {fileID: 0}
-    - target: {fileID: -6347608555410904195, guid: c666613dde306504a88ffb59e710de42,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -30.3
-      objectReference: {fileID: 0}
-    - target: {fileID: -6347608555410904195, guid: c666613dde306504a88ffb59e710de42,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c666613dde306504a88ffb59e710de42, type: 3}
