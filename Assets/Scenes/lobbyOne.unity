@@ -1396,7 +1396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guiObject: {fileID: 103822176}
-  nextLevel: bathroom
+  nextLevel: principals
 --- !u!65 &1685043881
 BoxCollider:
   m_ObjectHideFlags: 0
