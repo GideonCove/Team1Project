@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 494}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 494}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 444}
   m_MaxSize: {x: 22012, y: 10022}
   vertical: 0
-  controlID: 56
+  controlID: 140
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,9 +301,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ee3d0000
-      m_LastClickedID: 15854
-      m_ExpandedIDs: d87dffffa47effff
+      m_SelectedIDs: 08330000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 82f9ffff8efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -401,20 +401,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Models/Rooms/Playground
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Models/Rooms/Playground
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\tc210-Student\Documents\GitHub\Team1Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: cc3c0000
-    m_LastClickedID: 15564
-    m_ExpandedIDs: 00000000b23a0000a43b0000cc3c00003e3d000000ca9a3b
+    m_SelectedIDs: b62f0000
+    m_LastClickedID: 12214
+    m_ExpandedIDs: 00000000242b0000a62d0000d83000007832000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -442,7 +442,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b23a0000a43b0000cc3c0000
+    m_ExpandedIDs: 00000000242b0000a62d0000d830000078320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -614,9 +614,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.3593316, y: -0.79576206, z: 4.130371}
+    m_Target: {x: 4.6387434, y: -1.8575382, z: 1.8150856}
     speed: 2
-    m_Value: {x: -2.4468617, y: 2.1458793, z: -1.2310258}
+    m_Value: {x: 4.6387434, y: -1.8575382, z: 1.8150856}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -649,9 +649,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.20894675, y: 0.5434654, z: -0.14184682, w: 0.8005452}
   m_Size:
-    m_Target: 10.218986
+    m_Target: 13.9235
     speed: 2
-    m_Value: 10.700508
+    m_Value: 14.579581
   m_Ortho:
     m_Target: 0
     speed: 2
