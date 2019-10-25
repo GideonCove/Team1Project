@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/* 
+ * AUTHOR(S): Seth
+ * DATE OF CREATION: 10/23/2019
+ * SCENE(S) WHERE USED: ALL
+ * OBJECT(S) WHERE USED: player
+ * DESCRIPTION: Allows the doors to transport the player to other scenes.
+ */
+
 public class door : MonoBehaviour
 {
     public GameObject guiObject;
@@ -15,13 +23,12 @@ public class door : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("Hey what's up");
 
         if (gameObject.CompareTag("door"))
         {
 
             guiObject.SetActive(true);
-            if (guiObject.activeInHierarchy == true && Input.GetKeyDown(KeyCode.E))
+            if (guiObject.activeInHierarchy == true && Input.GetKeyDown(KeyCode.Space))
             {
                 DontDestroyOnLoad(other);
                 SceneManager.LoadScene(nextLevel);

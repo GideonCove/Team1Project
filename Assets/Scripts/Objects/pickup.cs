@@ -4,7 +4,7 @@ using UnityEngine;
 
 /* 
  * AUTHOR(S): Seth, Gideon, Zach, Anthony
- * DATE OF CREATION: 10/22/2019
+ * DATE OF CREATION: 10/23/2019
  * SCENE(S) WHERE USED: ALL
  * OBJECT(S) WHERE USED: all objects that can be picked up
  * DESCRIPTION: Allows the player to press "E" to pickup a highlighted(?) object and add it to their inventory.
@@ -23,8 +23,6 @@ public class pickup : MonoBehaviour
         // If the object is able to be picked up and "E" is pressed...
         if (gameObject.CompareTag("pickup") && Input.GetKeyDown(KeyCode.E))
         {
-            // Disables the mesh renderer.
-            gameObject.GetComponent<MeshRenderer>().enabled = false;
 
             // Checks to ensure the item picked up is not already in their inventory.
             for (int i = 0; i < playerMovement.inventory.Length; i++)
@@ -55,7 +53,10 @@ public class pickup : MonoBehaviour
             {
                 playerMovement.inventory[i] = itemToAdd;
                 itemAdded = true;
-                Debug.Log(itemToAdd.name + "was added to inventory");
+                Debug.Log(itemToAdd.name + " was added to inventory");
+                
+                // Disables the mesh renderer.
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
 
                 break;
             }
@@ -63,7 +64,7 @@ public class pickup : MonoBehaviour
 
         if (!itemAdded)
         {
-            Debug.Log(itemToAdd.name + "could not be added to inventory");
+            Debug.Log(itemToAdd.name + " could not be added to inventory");
         }
     }
 }
