@@ -535,6 +535,7 @@ GameObject:
   - component: {fileID: 1321121204}
   - component: {fileID: 1321121203}
   - component: {fileID: 1321121202}
+  - component: {fileID: 1321121207}
   m_Layer: 0
   m_Name: loose_basketball_placeholder
   m_TagString: pickup
@@ -562,7 +563,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321121201}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -584,7 +585,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c0b23f69ea60f7d42a3c9eacaaa97a5e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -626,6 +627,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1321121207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321121201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95566507df2e5bd4cb4cbaedf33115db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1351948725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1306,10 +1319,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: dumbbell
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 218911c1a0cd74743948ff7e7672e1f3,
+        type: 3}
+      propertyPath: m_TagString
+      value: pickup
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 218911c1a0cd74743948ff7e7672e1f3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.04
+      value: -4.2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 218911c1a0cd74743948ff7e7672e1f3,
         type: 3}
@@ -1319,7 +1337,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 218911c1a0cd74743948ff7e7672e1f3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.12
+      value: -10.98
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 218911c1a0cd74743948ff7e7672e1f3,
         type: 3}
@@ -1378,3 +1396,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 218911c1a0cd74743948ff7e7672e1f3, type: 3}
+--- !u!1 &1967380029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 218911c1a0cd74743948ff7e7672e1f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1967380028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1967380030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967380029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95566507df2e5bd4cb4cbaedf33115db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1967380031
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967380029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.370926, y: 10.988236, z: 9.431484}
+  m_Center: {x: 0, y: 0, z: 0}
