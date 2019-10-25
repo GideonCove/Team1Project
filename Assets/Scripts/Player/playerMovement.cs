@@ -19,6 +19,13 @@ public class playerMovement : MonoBehaviour
     public Vector3 xVector = new Vector3(1f, 0f, 0f);
     public Vector3 zVector = new Vector3(0f, 0f, 1f);
     public float moveSpeed = 7f;
+    
+    public Rigidbody rb;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,25 +33,25 @@ public class playerMovement : MonoBehaviour
         // Moves forward (negatively on the x-axis).
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(-xVector * moveSpeed * Time.deltaTime, Space.Self);
+            rb.AddRelativeForce(Vector3.forward * moveSpeed);
         }
 
         // Moves backward (positively on the x-axis).
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(xVector * moveSpeed * Time.deltaTime, Space.Self);
+            rb.AddRelativeForce(Vector3.back * moveSpeed);
         }
 
         // Moves forward (negatively on the z-axis).
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(-zVector * moveSpeed * Time.deltaTime, Space.Self);
+            rb.AddRelativeForce(Vector3.left * moveSpeed);
         }
 
         // Moves forward (positively on the z-axis).
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(zVector * moveSpeed * Time.deltaTime, Space.Self);
+            rb.AddRelativeForce(Vector3.right * moveSpeed);
         }
     }
 }
