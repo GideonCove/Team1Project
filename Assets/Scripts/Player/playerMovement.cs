@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /* 
- * AUTHOR(S): Seth, Gideon, Zach, Anthony
+ * AUTHOR(S): Seth, Cameron, Gideon, Zach, Anthony
  * DATE OF CREATION: 10/9/2019
  * SCENE(S) WHERE USED: ALL
  * OBJECT(S) WHERE USED: player
