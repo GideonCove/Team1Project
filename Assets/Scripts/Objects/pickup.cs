@@ -12,29 +12,30 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    // Imports the playerMovement script to keep track of inventory.
+    // Decides whether or not this can be picked up.
+    public bool canPickup = false;
+
+    PlayerMovement script;
     private bool isThere = false;
 
     private void OnTriggerStay(Collider player)
     {
-        // Assigns the specific script of the player's.
-        // script = player.GetComponent<playerMovement>();
+        script = player.GetComponent<PlayerMovement>();
 
-        // If the object is able to be picked up and "E" is pressed...
-        if (gameObject.CompareTag("pickup") && Input.GetKeyDown(KeyCode.E))
+        if (canPickup && Input.GetKeyDown(KeyCode.E))
         {
+            // Disables the mesh renderer.
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
 
-            // Checks to ensure the item picked up is not already in their inventory.
-            for (int i = 0; i < playerMovement.inventory.Length; i++)
+            for (int i = 0; i < script.inventory.Length; i++)
             {
-                if (playerMovement.inventory[i] == gameObject)
+                if (script.inventory[i] == gameObject)
                 {
                     isThere = true;
                     break;
                 }
             }
 
-            // If the item picked up is not already in inventory, add it.
             if (!isThere)
             {
                 AddObject(gameObject);
@@ -46,17 +47,13 @@ public class Pickup : MonoBehaviour
     {
         bool itemAdded = false;
 
-        // Looks for empty space in the inventory at add the item. If there is none, abort the process.
-        for (int i = 0; i < playerMovement.inventory.Length; i++)
+        for (int i = 0; i < script.inventory.Length; i++)
         {
-            if (playerMovement.inventory[i] == null)
+            if (script.inventory[i] == null)
             {
-                playerMovement.inventory[i] = itemToAdd;
+                script.inventory[i] = itemToAdd;
                 itemAdded = true;
                 Debug.Log(itemToAdd.name + " was added to inventory");
-                
-                // Disables the mesh renderer.
-                gameObject.GetComponent<MeshRenderer>().enabled = false;
 
                 break;
             }

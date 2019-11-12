@@ -68,7 +68,9 @@
     <Compile Include="Assets\Scripts\Objects\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Objects\Pickup.cs" />
     <Compile Include="Assets\Scripts\Player\CameraRotation.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <None Include="Assets\Resources\spriteDictionary.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/tc210-Student/Documents/GitHub/Team1Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

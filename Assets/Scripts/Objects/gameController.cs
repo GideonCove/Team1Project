@@ -46,7 +46,7 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private void Awake()
+    /*private void Awake()
     {
         // Loading sprites into array using the Resources directory.
         sprites = Resources.LoadAll<Sprite>(filePath);
@@ -83,4 +83,5 @@ public class GameController : MonoBehaviour
             Debug.Log("key, value: " + keyValue.Key + ":" + keyValue.Value);
         }
     }
+    */
 }
