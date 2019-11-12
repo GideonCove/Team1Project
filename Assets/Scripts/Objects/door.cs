@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
  * DESCRIPTION: Allows the doors to transport the player to other scenes.
  */
 
-public class door : MonoBehaviour
+public class Door : MonoBehaviour
 {
     public GameObject guiObject;
     public string nextLevel;

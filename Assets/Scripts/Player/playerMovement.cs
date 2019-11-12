@@ -10,7 +10,7 @@ using UnityEngine;
  * DESCRIPTION: Allows WASD to be used for player movement according to where the player is looking.
  */
 
-public class playerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     // GameObject array created for keeping inventory.
     static public GameObject[] inventory = new GameObject[12];
