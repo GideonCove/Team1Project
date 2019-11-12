@@ -5,18 +5,21 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    // Decides whether or not this can be picked up.
-    public bool canPickup = false;
     public GameObject someObject;
 
     private bool isThere = false;
     private int theOne = -1;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     private void OnTriggerStay(Collider col)
     {
         someObject = col.gameObject;
 
-        if (someObject.tag == "interactable" && Input.GetKeyDown(KeyCode.E) && GameController.max != GameController.inventoryList.Count)
+        if (someObject.tag == "pickup" && Input.GetKeyDown(KeyCode.E) && GameController.max != GameController.inventoryList.Count)
         {
             // Disables the mesh renderer if object is interactable.
             someObject.GetComponent<MeshRenderer>().enabled = false;

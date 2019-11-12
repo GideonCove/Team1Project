@@ -865,8 +865,6 @@ GameObject:
   - component: {fileID: 1321121205}
   - component: {fileID: 1321121204}
   - component: {fileID: 1321121203}
-  - component: {fileID: 1321121202}
-  - component: {fileID: 1321121207}
   m_Layer: 0
   m_Name: loose_basketball_placeholder
   m_TagString: pickup
@@ -874,18 +872,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1321121202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321121201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95566507df2e5bd4cb4cbaedf33115db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &1321121203
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -958,18 +944,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1321121207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321121201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95566507df2e5bd4cb4cbaedf33115db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1351948725
 PrefabInstance:
   m_ObjectHideFlags: 0
