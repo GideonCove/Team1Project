@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /* 
- * AUTHOR(S): Seth
+ * AUTHOR(S): Seth, Cameron
  * DATE OF CREATION: 10/23/2019
  * SCENE(S) WHERE USED: ALL
  * OBJECT(S) WHERE USED: player
