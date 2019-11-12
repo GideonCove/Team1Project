@@ -262,6 +262,7 @@ MonoBehaviour:
   destinationX: 0
   destinationY: 1
   destinationZ: 0
+  destinationDirection: 
 --- !u!65 &96049652
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -555,6 +556,7 @@ MonoBehaviour:
   destinationX: 0
   destinationY: 1
   destinationZ: 0
+  destinationDirection: 
 --- !u!65 &360486451
 BoxCollider:
   m_ObjectHideFlags: 0

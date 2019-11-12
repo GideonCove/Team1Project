@@ -361,7 +361,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: b46ed0034c80a6c49be3d452ae5409ff,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b46ed0034c80a6c49be3d452ae5409ff,
         type: 3}
@@ -593,7 +593,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e67d4dce0a98e6d42a3be74a9dba1d9a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e67d4dce0a98e6d42a3be74a9dba1d9a,
         type: 3}
@@ -802,7 +802,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 54f55dff03104e44cbd12e5a32fec9e2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 54f55dff03104e44cbd12e5a32fec9e2,
         type: 3}
@@ -871,7 +871,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1b26e165c1130c543861f584eecf777b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1b26e165c1130c543861f584eecf777b,
         type: 3}
@@ -2675,7 +2675,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d5faa2e3198fb94429b7fcd17d3634f5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d5faa2e3198fb94429b7fcd17d3634f5,
         type: 3}
@@ -2759,7 +2759,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d3f4cc6c8a1085f469b95138c4459916,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d3f4cc6c8a1085f469b95138c4459916,
         type: 3}
@@ -2812,6 +2812,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiObject: {fileID: 817154579}
   nextLevel: math
+  destinationX: 0
+  destinationY: 1
+  destinationZ: 0
+  destinationDirection: 
 --- !u!65 &1896766070
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2918,6 +2922,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiObject: {fileID: 817154579}
   nextLevel: music
+  destinationX: 0
+  destinationY: 1
+  destinationZ: 0
+  destinationDirection: 
 --- !u!65 &1994758816
 BoxCollider:
   m_ObjectHideFlags: 0
