@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /* 
- * AUTHOR(S): Seth, Gideon, Zach, Anthony
+ * AUTHOR(S): Seth, Cameron, Gideon, Zach, Anthony
  * DATE OF CREATION: 10/23/2019
  * SCENE(S) WHERE USED: ALL
  * OBJECT(S) WHERE USED: all objects that can be picked up
  * DESCRIPTION: Allows the player to press "E" to pickup a highlighted(?) object and add it to their inventory.
  */
 
-public class pickup : MonoBehaviour
+public class Pickup : MonoBehaviour
 {
     // Imports the playerMovement script to keep track of inventory.
     private bool isThere = false;
