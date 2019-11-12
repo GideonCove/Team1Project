@@ -15,6 +15,9 @@ public class door : MonoBehaviour
 {
     public GameObject guiObject;
     public string nextLevel;
+    public float destinationX;
+    public float destinationY = 1;
+    public float destinationZ;
 
     private void Start()
     {
@@ -31,6 +34,7 @@ public class door : MonoBehaviour
             if (guiObject.activeInHierarchy == true && Input.GetKeyDown(KeyCode.Space))
             {
                 DontDestroyOnLoad(other);
+                other.transform.position = new Vector3(destinationX, destinationY, destinationZ);
                 SceneManager.LoadScene(nextLevel);
             }
         }
