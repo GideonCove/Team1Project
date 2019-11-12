@@ -13,12 +13,12 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-
     // Create the singleton
     public static GameController instance;
 
     // This is the list that holds invenotry for the game
     public static List<Item> inventoryList = new List<Item>();
+    public static int max = 12;
 
     // A list of items that have been used to solve puzzles
     public static List<Item> inventoryUsed = new List<Item>();
