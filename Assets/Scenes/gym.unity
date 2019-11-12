@@ -1915,6 +1915,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiObject: {fileID: 1808747752}
   nextLevel: lobbyOne
+  destinationX: 3.83
+  destinationY: 1
+  destinationZ: 0.05
+  destinationDirection: east
 --- !u!65 &1897029707
 BoxCollider:
   m_ObjectHideFlags: 0

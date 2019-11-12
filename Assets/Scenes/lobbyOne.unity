@@ -239,10 +239,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guiObject: {fileID: 103822176}
-  nextLevel: bathroom
-  destinationX: 0
+  nextLevel: gym
+  destinationX: 4.47
   destinationY: 1
-  destinationZ: 0
+  destinationZ: -0.13
+  destinationDirection: east
 --- !u!65 &27738488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1030,6 +1031,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 444433342}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &444433344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9101430577481724397, guid: 474b3b058154ebc408f1888f430f32a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 444433342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &444433345
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444433344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 3369316746193770658, guid: 474b3b058154ebc408f1888f430f32a4, type: 3}
 --- !u!1 &447492507 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3361428774842992406, guid: cd0a73f9160315d43b8c84e8a549f05c,
@@ -3536,6 +3557,7 @@ MonoBehaviour:
   destinationX: 0
   destinationY: 1
   destinationZ: 0
+  destinationDirection: 
 --- !u!65 &1230606175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3671,6 +3693,7 @@ MonoBehaviour:
   destinationX: 0
   destinationY: 1
   destinationZ: 0
+  destinationDirection: 
 --- !u!65 &1328962532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3955,6 +3978,7 @@ MonoBehaviour:
   destinationX: 0
   destinationY: 1
   destinationZ: 0
+  destinationDirection: 
 --- !u!65 &1490106962
 BoxCollider:
   m_ObjectHideFlags: 0

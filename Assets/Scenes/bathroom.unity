@@ -5493,6 +5493,7 @@ MonoBehaviour:
   destinationX: 0
   destinationY: 1
   destinationZ: 0
+  destinationDirection: 
 --- !u!65 &1374424698
 BoxCollider:
   m_ObjectHideFlags: 0

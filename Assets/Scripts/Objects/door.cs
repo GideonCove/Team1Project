@@ -18,6 +18,7 @@ public class door : MonoBehaviour
     public float destinationX;
     public float destinationY = 1;
     public float destinationZ;
+    public string destinationDirection;
 
     private void Start()
     {
@@ -35,6 +36,30 @@ public class door : MonoBehaviour
             {
                 DontDestroyOnLoad(other);
                 other.transform.position = new Vector3(destinationX, destinationY, destinationZ);
+
+                switch (destinationDirection) {
+                    case "north":
+                        {
+                            other.transform.rotation = Quaternion.Euler(0, 180, 0);
+                            break;
+                        }
+                    case "south":
+                        {
+                            other.transform.rotation = Quaternion.Euler(0, 0, 0);
+                            break;
+                        }
+                    case "east":
+                        {
+                            other.transform.rotation = Quaternion.Euler(0, -90, 0);
+                            break;
+                        }
+                    case "west":
+                        {
+                            other.transform.rotation = Quaternion.Euler(0, 90, 0);
+                            break;
+                        }
+                }
+
                 SceneManager.LoadScene(nextLevel);
             }
         }
