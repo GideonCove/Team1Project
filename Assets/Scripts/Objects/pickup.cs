@@ -10,7 +10,7 @@ using UnityEngine;
  * DESCRIPTION: Allows the player to press "E" to pickup a highlighted(?) object and add it to their inventory.
  */
 
-public class pickup : MonoBehaviour
+public class Pickup : MonoBehaviour
 {
     // Imports the playerMovement script to keep track of inventory.
     private bool isThere = false;

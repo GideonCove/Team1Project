@@ -62,11 +62,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Objects\door.cs" />
-    <Compile Include="Assets\Scripts\Objects\mainMenu.cs" />
-    <Compile Include="Assets\Scripts\Objects\pickup.cs" />
-    <Compile Include="Assets\Scripts\Player\cameraRotation.cs" />
-    <Compile Include="Assets\Scripts\Player\playerMovement.cs" />
+    <Compile Include="Assets\Scripts\Objects\Door.cs" />
+    <Compile Include="Assets\Scripts\Objects\GameController.cs" />
+    <Compile Include="Assets\Scripts\Objects\Item.cs" />
+    <Compile Include="Assets\Scripts\Objects\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Objects\Pickup.cs" />
+    <Compile Include="Assets\Scripts\Player\CameraRotation.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/tc210-Student/Documents/GitHub/Team1Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
