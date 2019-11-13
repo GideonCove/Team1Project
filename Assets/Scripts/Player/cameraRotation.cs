@@ -10,7 +10,7 @@ using UnityEngine;
  * DESCRIPTION: Allows the player's camera to be rotated along the x- and y-axes as well as allowing the player themselves to rotate.
  */
 
-public class cameraRotation : MonoBehaviour
+public class CameraRotation : MonoBehaviour
 {
     // Sensitivity for the movement looking horizontally (x-axis) and vertically (y-axis).
     public float sensitivityHorizontal = 10f;

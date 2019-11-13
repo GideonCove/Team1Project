@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /* 
- * AUTHOR(S): Seth
+ * AUTHOR(S): Seth, Cameron
  * DATE OF CREATION: 10/23/2019
  * SCENE(S) WHERE USED: ALL
  * OBJECT(S) WHERE USED: player
  * DESCRIPTION: Allows the doors to transport the player to other scenes.
  */
 
-public class door : MonoBehaviour
+public class Door : MonoBehaviour
 {
     public GameObject guiObject;
     public string nextLevel;

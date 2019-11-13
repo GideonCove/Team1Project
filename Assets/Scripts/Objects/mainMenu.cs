@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
  * DESCRIPTION: Ensures the player is not destroyed on load, allowing for inventory and player persistence.
  */
 
-public class mainMenu : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
     public GameObject player;
 
