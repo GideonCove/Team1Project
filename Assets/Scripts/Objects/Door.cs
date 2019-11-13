@@ -46,44 +46,12 @@ public class Door : MonoBehaviour
                 SceneManager.LoadScene(nextLevel);
                 Debug.Log("Scene changed to " + nextLevel);
 
+                PlayerController.destinationX = destinationX;
+                PlayerController.destinationY = destinationY;
+                PlayerController.destinationZ = destinationZ;
+                PlayerController.destinationDirection = destinationDirection;
+
                 //Teleport(destinationX, destinationY, destinationZ, destinationDirection);
-
-                Debug.Log("Scene change detected, now teleporting...");
-                DontDestroyOnLoad(gameObject);
-
-                if (SceneManager.GetActiveScene().name == nextLevel)
-                {
-                    player = GameObject.Find("player");
-
-                    player.transform.position = new Vector3(destinationX, destinationY, destinationZ);
-
-                    switch (destinationDirection)
-                    {
-                        case "north":
-                            {
-                                player.transform.rotation = Quaternion.Euler(0, 180, 0);
-                                break;
-                            }
-                        case "south":
-                            {
-                                player.transform.rotation = Quaternion.Euler(0, 0, 0);
-                                break;
-                            }
-                        case "east":
-                            {
-                                player.transform.rotation = Quaternion.Euler(0, -90, 0);
-                                break;
-                            }
-                        case "west":
-                            {
-                                player.transform.rotation = Quaternion.Euler(0, 90, 0);
-                                break;
-                            }
-                    }
-
-                    Debug.Log("Successful teleportation in scene " + SceneManager.GetActiveScene().name);
-                    Destroy(gameObject);
-                }
             }
             
         }

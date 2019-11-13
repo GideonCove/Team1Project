@@ -2,12 +2,50 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     public GameObject someObject;
-    
+
     private int theOne = -1;
+
+    public static float destinationX = 0;
+    public static float destinationY = 1;
+    public static float destinationZ = 0;
+    public static string destinationDirection;
+
+    // Sets the player up in rooms
+    private void Awake()
+    {
+        gameObject.transform.position = new Vector3(destinationX, destinationY, destinationZ);
+
+        switch (destinationDirection)
+        {
+            case "north":
+                {
+                    gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
+                    break;
+                }
+            case "south":
+                {
+                    gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+                    break;
+                }
+            case "east":
+                {
+                    gameObject.transform.rotation = Quaternion.Euler(0, -90, 0);
+                    break;
+                }
+            case "west":
+                {
+                    gameObject.transform.rotation = Quaternion.Euler(0, 90, 0);
+                    break;
+                }
+        }
+
+        Debug.Log("Successful teleportation in scene " + SceneManager.GetActiveScene().name);
+    }
 
     private void OnTriggerStay(Collider col)
     {
