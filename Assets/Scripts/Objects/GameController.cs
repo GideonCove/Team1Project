@@ -46,8 +46,13 @@ public class GameController : MonoBehaviour
         }
     }
 
-    /*private void Awake()
+    private void Awake()
     {
+        // This adds to the itemDatabase using the Item class constructor we created in item.cs
+        theItems.Add(new Item(0, "loose_basketball", true));
+        DontDestroyOnLoad(gameObject);
+
+        /*
         // Loading sprites into array using the Resources directory.
         sprites = Resources.LoadAll<Sprite>(filePath);
         msg += sprites.Length;
@@ -82,6 +87,6 @@ public class GameController : MonoBehaviour
         {
             Debug.Log("key, value: " + keyValue.Key + ":" + keyValue.Value);
         }
+        */
     }
-    */
 }

@@ -6,14 +6,8 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public GameObject someObject;
-
-    private bool isThere = false;
+    
     private int theOne = -1;
-
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
 
     private void OnTriggerStay(Collider col)
     {
@@ -76,6 +70,7 @@ public class PlayerController : MonoBehaviour
         Item newItem = new Item(item.itemID, item.itemName, item.itemUsable);
         newItem.itemIcon = Resources.Load<Texture2D>("Sprites/" + newItem.itemName);
         GameController.inventoryList.Add(newItem);
+        Debug.Log(newItem.itemName + " was added to inventory");
     }
 
     /*
