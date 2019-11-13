@@ -594,7 +594,7 @@ Transform:
   - {fileID: 1203120290}
   - {fileID: 1000636929}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &279659528 stripped
 GameObject:
@@ -1970,7 +1970,7 @@ GameObject:
   - component: {fileID: 888389597}
   - component: {fileID: 888389596}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: west_door_trigger
   m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1988,7 +1988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df123a7556df5584ea6ea06a2cb01a7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guiObject: {fileID: 1177894939}
+  guiObject: {fileID: 103822176}
   nextLevel: gym
   destinationX: 4.5
   destinationY: 1
@@ -2064,7 +2064,7 @@ Transform:
   m_LocalScale: {x: 1, y: 3.5067, z: 1.2557}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &912197916 stripped
 GameObject:
@@ -2324,7 +2324,7 @@ Transform:
   - {fileID: 1782037485}
   - {fileID: 1979255697}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &968895382 stripped
 GameObject:
@@ -3045,7 +3045,7 @@ RectTransform:
   - {fileID: 103822177}
   - {fileID: 18413316}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3648,7 +3648,7 @@ MonoBehaviour:
   destinationX: 0
   destinationY: 1
   destinationZ: 0
-  destinationDirection: 
+  destinationDirection: north
 --- !u!65 &1230606175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3780,11 +3780,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guiObject: {fileID: 103822176}
-  nextLevel: bathroom
+  nextLevel: principals
   destinationX: 0
   destinationY: 1
   destinationZ: 0
-  destinationDirection: 
+  destinationDirection: south
 --- !u!65 &1328962532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4065,11 +4065,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guiObject: {fileID: 103822176}
-  nextLevel: bathroom
+  nextLevel: music
   destinationX: 0
   destinationY: 1
   destinationZ: 0
-  destinationDirection: 
+  destinationDirection: east
 --- !u!65 &1490106962
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4391,7 +4391,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1566491728 stripped
 GameObject:
@@ -5324,7 +5324,7 @@ Transform:
   m_LocalScale: {x: 0.18992, y: 0.040365, z: 0.37446}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -12.567, y: -33.489002, z: 0}
 --- !u!1 &2107548449
 GameObject:
