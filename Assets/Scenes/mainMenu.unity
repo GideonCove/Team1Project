@@ -796,7 +796,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '[ENTER TO START]'
+  m_Text: '[SPACE TO START]'
 --- !u!222 &1507892485
 CanvasRenderer:
   m_ObjectHideFlags: 0
