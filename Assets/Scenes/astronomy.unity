@@ -1895,9 +1895,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiObject: {fileID: 706003208}
   nextLevel: science
-  destinationX: 0
+  destinationX: -8.68
   destinationY: 1
-  destinationZ: 0
+  destinationZ: 1.41
   destinationDirection: 
 --- !u!65 &1398892955
 BoxCollider:
@@ -3070,7 +3070,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026933505}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 7.21, y: 1, z: -7.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 700123685}

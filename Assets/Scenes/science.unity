@@ -1128,9 +1128,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiObject: {fileID: 1653470741}
   nextLevel: astronomy
-  destinationX: 0
+  destinationX: 7.21
   destinationY: 1
-  destinationZ: 0
+  destinationZ: -7.66
   destinationDirection: 
 --- !u!65 &380477709
 BoxCollider:
@@ -1322,9 +1322,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiObject: {fileID: 1653470741}
   nextLevel: lobbyTwo
-  destinationX: 0
+  destinationX: 0.48
   destinationY: 1
-  destinationZ: 0
+  destinationZ: 4.21
   destinationDirection: 
 --- !u!65 &601131047
 BoxCollider:

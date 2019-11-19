@@ -3620,7 +3620,7 @@ MonoBehaviour:
   nextLevel: bathroom
   destinationX: 0
   destinationY: 1
-  destinationZ: 0
+  destinationZ: 5.93
   destinationDirection: north
 --- !u!65 &1230606175
 BoxCollider:
@@ -3754,9 +3754,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiObject: {fileID: 103822176}
   nextLevel: principals
-  destinationX: 0
+  destinationX: -1.614
   destinationY: 1
-  destinationZ: 0
+  destinationZ: 0.021
   destinationDirection: south
 --- !u!65 &1328962532
 BoxCollider:
@@ -4039,9 +4039,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiObject: {fileID: 103822176}
   nextLevel: music
-  destinationX: 0
+  destinationX: 7.94
   destinationY: 1
-  destinationZ: 0
+  destinationZ: -3.39
   destinationDirection: east
 --- !u!65 &1490106962
 BoxCollider:

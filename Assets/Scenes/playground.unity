@@ -3213,9 +3213,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiObject: {fileID: 817154579}
   nextLevel: math
-  destinationX: 0
+  destinationX: 5.1
   destinationY: 1
-  destinationZ: 0
+  destinationZ: -5.24
   destinationDirection: 
 --- !u!65 &1896766070
 BoxCollider:
@@ -3323,9 +3323,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiObject: {fileID: 817154579}
   nextLevel: music
-  destinationX: 0
+  destinationX: 3.2
   destinationY: 1
-  destinationZ: 0
+  destinationZ: -8.18
   destinationDirection: 
 --- !u!65 &1994758816
 BoxCollider:

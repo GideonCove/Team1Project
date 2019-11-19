@@ -6569,10 +6569,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiObject: {fileID: 161777134}
   nextLevel: lobbyOne
-  destinationX: 0
+  destinationX: -0.769
   destinationY: 1
-  destinationZ: 0
-  destinationDirection: 
+  destinationZ: -5.873
+  destinationDirection: south
 --- !u!65 &1374424698
 BoxCollider:
   m_ObjectHideFlags: 0
