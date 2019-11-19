@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class ClockHandMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public GameObject ClockHand;
+    public float speed;
     void Update()
     {
-        
+        OrbitAround();
+    }
+    void OrbitAround()
+    {
+        transform.RotateAround(ClockHand.transform.position, new Vector3(1f, 0f, 0f), 90f * Time.deltaTime * speed);
     }
 }
