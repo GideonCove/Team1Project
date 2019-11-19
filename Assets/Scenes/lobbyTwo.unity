@@ -651,9 +651,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiObject: {fileID: 47940293}
   nextLevel: science
-  destinationX: 0.44
+  destinationX: -5.33
   destinationY: 1
-  destinationZ: -7.24
+  destinationZ: -1.34
   destinationDirection: 
 --- !u!65 &137734109
 BoxCollider:

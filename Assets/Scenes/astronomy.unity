@@ -1903,7 +1903,7 @@ MonoBehaviour:
   nextLevel: science
   destinationX: 0
   destinationY: 1
-  destinationZ: 0
+  destinationZ: 6.9
   destinationDirection: 
 --- !u!1 &765980497 stripped
 GameObject:
