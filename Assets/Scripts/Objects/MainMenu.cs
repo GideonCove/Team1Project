@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /* 
- * AUTHOR(S): Seth
+ * AUTHOR(S): Seth, Cameron
  * DATE OF CREATION: 10/24/2019
  * SCENE(S) WHERE USED: ALL
- * OBJECT(S) WHERE USED: all objects that can be picked up
- * DESCRIPTION: Ensures the player is not destroyed on load, allowing for inventory and player persistence.
+ * OBJECT(S) WHERE USED: Menu buttons within the main menu, tutorial, and settings.
+ * DESCRIPTION: Allows for button functions based on button name.
  */
 
 public class MainMenu : MonoBehaviour
