@@ -2952,24 +2952,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e6eb6a3ab42ee54ea8321c0ee1807d8, type: 3}
---- !u!1 &1083108413 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 0e6eb6a3ab42ee54ea8321c0ee1807d8,
-    type: 3}
-  m_PrefabInstance: {fileID: 1083108412}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1083108414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083108413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95566507df2e5bd4cb4cbaedf33115db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1135759315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4786,18 +4768,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1888236951}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1888236953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888236952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95566507df2e5bd4cb4cbaedf33115db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1888236954
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5187,7 +5157,6 @@ GameObject:
   - component: {fileID: 2107086265}
   - component: {fileID: 2107086264}
   - component: {fileID: 2107086263}
-  - component: {fileID: 2107086262}
   m_Layer: 0
   m_Name: calculator_placeholder
   m_TagString: pickup
@@ -5195,18 +5164,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2107086262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107086261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95566507df2e5bd4cb4cbaedf33115db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &2107086263
 BoxCollider:
   m_ObjectHideFlags: 0

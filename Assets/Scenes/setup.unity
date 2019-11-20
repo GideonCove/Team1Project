@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 335559782}
   - component: {fileID: 335559781}
   m_Layer: 5
-  m_Name: Text
+  m_Name: souls_label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -985,7 +985,7 @@ GameObject:
   - component: {fileID: 516108249}
   - component: {fileID: 516108248}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: inventory_hud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1456,7 +1456,7 @@ GameObject:
   - component: {fileID: 1174782357}
   - component: {fileID: 1174782356}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: souls_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1896,7 +1896,7 @@ GameObject:
   - component: {fileID: 1441385162}
   - component: {fileID: 1441385161}
   m_Layer: 5
-  m_Name: Button
+  m_Name: soul_slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

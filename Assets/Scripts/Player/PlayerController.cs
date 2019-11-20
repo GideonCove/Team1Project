@@ -55,7 +55,6 @@ public class PlayerController : MonoBehaviour
         {
             // Disables the mesh renderer if object is interactable.
             someObject.GetComponent<MeshRenderer>().enabled = false;
-            //theOne = -1; (disabled)
 
             FindInDatabase();
             IsItHere();
@@ -98,7 +97,7 @@ public class PlayerController : MonoBehaviour
         if (!foundIt)
         {
             AddItemToInventory(GameController.theItems[theOne]);
-            //ShowInPanel();
+            ShowInPanel();
         }
     }
 
@@ -106,12 +105,12 @@ public class PlayerController : MonoBehaviour
     public void AddItemToInventory(Item item)
     {
         Item newItem = new Item(item.itemID, item.itemName, item.itemUsable);
-        newItem.itemIcon = Resources.Load<Texture2D>("Sprites/" + newItem.itemName);
+        newItem.itemIcon = Resources.Load<Texture2D>("Sprites/Items/" + newItem.itemName);
         GameController.inventoryList.Add(newItem);
         Debug.Log(newItem.itemName + " was added to inventory");
     }
 
-    /*
+    
     public void ShowInPanel()
     {
         Texture2D tex;
@@ -120,11 +119,10 @@ public class PlayerController : MonoBehaviour
         int whichOne;
 
         whichOne = GameController.inventoryList.Count;
-        theName = "slot_" + whichOne;
+        theName = "slot_" + (whichOne - 1);
         GameObject anObject = GameObject.Find(theName);
         tex = GameController.inventoryList[whichOne - 1].itemIcon;
-        mySprite = Sprite.Create(tex, new Rect(0, 0, 32, 32), new Vector2(.5f, .5f));
+        mySprite = Sprite.Create(tex, new Rect(0, 0, 32, 32), new Vector2(1f, 1f));
         anObject.GetComponent<Image>().sprite = mySprite;
     }
-    */
 }

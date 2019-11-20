@@ -335,18 +335,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 35254500}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &35254502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35254501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95566507df2e5bd4cb4cbaedf33115db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &35254503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -446,7 +434,6 @@ GameObject:
   - component: {fileID: 119880552}
   - component: {fileID: 119880551}
   - component: {fileID: 119880550}
-  - component: {fileID: 119880554}
   m_Layer: 0
   m_Name: family_portrait_placeholder
   m_TagString: pickup
@@ -526,18 +513,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 3.0920002, y: 80.449005, z: -1.46}
---- !u!114 &119880554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119880549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95566507df2e5bd4cb4cbaedf33115db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &137734107
 GameObject:
   m_ObjectHideFlags: 0

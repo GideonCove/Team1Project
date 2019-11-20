@@ -1886,7 +1886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df123a7556df5584ea6ea06a2cb01a7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorText: {fileID: 0}
+  doorText: {fileID: 1488331327}
   nextLevel: science
   destinationX: 0
   destinationY: 1
@@ -3669,7 +3669,6 @@ GameObject:
   - component: {fileID: 1737879513}
   - component: {fileID: 1737879512}
   - component: {fileID: 1737879515}
-  - component: {fileID: 1737879511}
   m_Layer: 0
   m_Name: combo_note_placeholder
   m_TagString: pickup
@@ -3677,18 +3676,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1737879511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737879510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95566507df2e5bd4cb4cbaedf33115db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1737879512
 MeshRenderer:
   m_ObjectHideFlags: 0
