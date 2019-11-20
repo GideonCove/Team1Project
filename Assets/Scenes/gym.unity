@@ -2042,7 +2042,7 @@ GameObject:
   - component: {fileID: 1808747755}
   - component: {fileID: 1808747754}
   m_Layer: 5
-  m_Name: Text
+  m_Name: door_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2064,7 +2064,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 15}
+  m_AnchoredPosition: {x: 0, y: 67.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1808747754
@@ -2122,7 +2122,7 @@ GameObject:
   - component: {fileID: 1818515923}
   - component: {fileID: 1818515922}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: text_canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2241,7 +2241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df123a7556df5584ea6ea06a2cb01a7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guiObject: {fileID: 1808747752}
+  doorText: {fileID: 1808747752}
   nextLevel: lobbyOne
   destinationX: 3.83
   destinationY: 1

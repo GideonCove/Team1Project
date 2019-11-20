@@ -13,7 +13,8 @@ using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
-    public GameObject guiObject;
+    public GameObject doorText;
+
     public string nextLevel;
     public float destinationX;
     public float destinationY = 1;
@@ -23,24 +24,23 @@ public class Door : MonoBehaviour
     private GameObject player;
     private string currentScene;
 
-    private void Awake()
-    {
-        currentScene = SceneManager.GetActiveScene().name;
-    }
-
     private void Start()
     {
-        guiObject.SetActive(false);
+        currentScene = SceneManager.GetActiveScene().name;
+        doorText.SetActive(false);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        doorText.SetActive(true);
     }
 
     private void OnTriggerStay(Collider other)
     {
-
         if (gameObject.CompareTag("door") && currentScene == SceneManager.GetActiveScene().name)
         {
-            guiObject.SetActive(true);
 
-            if (guiObject.activeInHierarchy == true && Input.GetKeyDown(KeyCode.Space))
+            if (doorText.activeInHierarchy == true && Input.GetKeyDown(KeyCode.Space))
             {
 
                 SceneManager.LoadScene(nextLevel);
@@ -60,7 +60,7 @@ public class Door : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
 
-        guiObject.SetActive(false);
+        doorText.SetActive(false);
     }
 
     void Teleport(float destX, float destY, float destZ, string destDir)

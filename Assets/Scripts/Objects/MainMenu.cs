@@ -18,7 +18,7 @@ public class MainMenu : MonoBehaviour
         switch (gameObject.name)
         {
             case "start_button":
-                SceneManager.LoadScene("lobbyOne");
+                SceneManager.LoadScene("setup");
                 break;
             case "tutorial_button":
                 SceneManager.LoadScene("tutorial");

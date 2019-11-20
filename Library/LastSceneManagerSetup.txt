@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/math.unity
+- path: Assets/Scenes/lobbyOne.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
