@@ -27,7 +27,7 @@ public class GameController : MonoBehaviour
     // These are the items in the game that are collectible
     public static List<Item> theItems = new List<Item>();
 
-    public string filePath = "Sprites/";
+    public string filePath = "Sprites/Items";
     private Sprite[] sprites;
     private string msg = "Images Loaded: ";
 
@@ -37,27 +37,22 @@ public class GameController : MonoBehaviour
     public string[] dataLines;
     public string[][] dataPairs;
 
-    private void Start()
+    private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
+
+        // Loading sprites into array using the Resources directory.
+        sprites = Resources.LoadAll<Sprite>(filePath);
+        msg += sprites.Length;
+        Debug.Log(msg);
+
         // This adds to the itemDatabase using the Item class constructor we created in item.cs
+        theItems.Add(new Item(0, "loose_basketball", true));
 
         foreach (Item anItem in theItems)
         {
             anItem.itemIcon = Resources.Load<Texture2D>(filePath + anItem.itemName);
         }
-    }
-
-    private void Awake()
-    {
-        // This adds to the itemDatabase using the Item class constructor we created in item.cs
-        theItems.Add(new Item(0, "loose_basketball", true));
-        DontDestroyOnLoad(gameObject);
-
-        /*
-        // Loading sprites into array using the Resources directory.
-        sprites = Resources.LoadAll<Sprite>(filePath);
-        msg += sprites.Length;
-        Debug.Log(msg);
 
         // Load the dictionary.
         dataFile = Resources.Load("spriteDictionary") as TextAsset;
@@ -88,6 +83,5 @@ public class GameController : MonoBehaviour
         {
             Debug.Log("key, value: " + keyValue.Key + ":" + keyValue.Value);
         }
-        */
     }
 }
