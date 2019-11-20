@@ -21,11 +21,15 @@ public class MainMenu : MonoBehaviour
                 SceneManager.LoadScene("lobbyOne");
                 break;
             case "tutorial_button":
+                SceneManager.LoadScene("tutorial");
                 break;
             case "settings_button":
                 break;
             case "quit_button":
                 Application.Quit();
+                break;
+            case "main_menu_button":
+                SceneManager.LoadScene("mainMenu");
                 break;
         }
     }
