@@ -13,17 +13,20 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject player;
-
-    // Update is called once per frame
-    void Update()
+    public void ButtonClick()
     {
-        if (Input.GetKey(KeyCode.Return))
+        switch (gameObject.name)
         {
-            // Ensures the player is not destroyed on new scene loads.
-            DontDestroyOnLoad(player);
-
-            SceneManager.LoadScene("lobbyOne");
+            case "start_button":
+                SceneManager.LoadScene("lobbyOne");
+                break;
+            case "tutorial_button":
+                break;
+            case "settings_button":
+                break;
+            case "quit_button":
+                Application.Quit();
+                break;
         }
     }
 }
