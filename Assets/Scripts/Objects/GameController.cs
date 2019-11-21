@@ -17,6 +17,10 @@ public class GameController : MonoBehaviour
     // Create the singleton
     public static GameController instance;
 
+    // Settings variables
+    public static float brightness = 10;
+    public static float speed = 10;
+
     // This is the list that holds invenotry for the game
     public static List<Item> inventoryList = new List<Item>();
     public static int max = 12;

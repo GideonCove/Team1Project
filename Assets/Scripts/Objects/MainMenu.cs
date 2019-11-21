@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 /* 
  * AUTHOR(S): Seth, Cameron
@@ -13,6 +14,22 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private void Start()
+    {
+        switch (gameObject.name)
+        {
+            case "brightness_slider":
+                gameObject.GetComponent<Slider>().value = GameController.brightness;
+                break;
+            case "speed_slider":
+                gameObject.GetComponent<Slider>().value = GameController.speed;
+                break;
+            case "volume_slider":
+                gameObject.GetComponent<Slider>().value = AudioListener.volume;
+                break;
+        }
+    }
+
     public void ButtonClick()
     {
         switch (gameObject.name)
@@ -31,6 +48,15 @@ public class MainMenu : MonoBehaviour
                 break;
             case "main_menu_button":
                 SceneManager.LoadScene("mainMenu");
+                break;
+            case "brightness_slider":
+                GameController.brightness = gameObject.GetComponent<Slider>().value;
+                break;
+            case "speed_slider":
+                GameController.speed = gameObject.GetComponent<Slider>().value;
+                break;
+            case "volume_slider":
+                AudioListener.volume = gameObject.GetComponent<Slider>().value;
                 break;
         }
     }

@@ -18,13 +18,15 @@ public class PlayerMovement : MonoBehaviour
     // This script is used to allow the arrow keys to move the player around the game world on the x and z-axes.
     public Vector3 xVector = new Vector3(1f, 0f, 0f);
     public Vector3 zVector = new Vector3(0f, 0f, 1f);
-    public float moveSpeed = 7f;
+    public float moveSpeed;
     
     public Rigidbody rb;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        GameObject.Find("flashlight").GetComponent<Light>().range = GameController.brightness;
+        moveSpeed = GameController.speed;
     }
 
     // Update is called once per frame
