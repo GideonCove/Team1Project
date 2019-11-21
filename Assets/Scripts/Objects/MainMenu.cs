@@ -24,6 +24,7 @@ public class MainMenu : MonoBehaviour
                 SceneManager.LoadScene("tutorial");
                 break;
             case "settings_button":
+                SceneManager.LoadScene("settings");
                 break;
             case "quit_button":
                 Application.Quit();
