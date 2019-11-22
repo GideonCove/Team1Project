@@ -11,7 +11,6 @@ using UnityEngine.SceneManagement;
  * DESCRIPTION: Holds important global variables for use in-game.
  */
 
-
 public class GameController : MonoBehaviour
 {
     // Create the singleton

@@ -4,6 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/* 
+ * AUTHOR(S): Seth, Cameron, Gideon, Zach, Anthony
+ * DATE OF CREATION: 11/12/2019
+ * SCENE(S) WHERE USED: ALL
+ * OBJECT(S) WHERE USED: player
+ * DESCRIPTION: Allows for objects to be picked up and added to HUD.
+ */
+
 public class PlayerController : MonoBehaviour
 {
     public GameObject someObject;

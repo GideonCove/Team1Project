@@ -4,6 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/* 
+ * AUTHOR(S): Seth, Cameron, Gideon, Zach, Anthony
+ * DATE OF CREATION: 11/21/2019
+ * SCENE(S) WHERE USED: TBD
+ * OBJECT(S) WHERE USED: TBD
+ * DESCRIPTION: Allows for puzzles in rooms to be solved.
+ */
+
 public class SolvePuzzle : MonoBehaviour
 {
     public Sprite slotSprite;

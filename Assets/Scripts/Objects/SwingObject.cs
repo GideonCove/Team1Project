@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* 
+ * AUTHOR(S): Cameron
+ * DATE OF CREATION: 11/19/2019
+ * SCENE(S) WHERE USED: playground
+ * OBJECT(S) WHERE USED: swingset
+ * DESCRIPTION: Allows for the swings to swing about.
+ */
+
 public class SwingObject : MonoBehaviour
 {
     public float delta = 1.5f;
