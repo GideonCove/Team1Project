@@ -6,13 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class SolvePuzzle : MonoBehaviour
 {
+    public Sprite slotSprite;
+
     private GameController gameController;
     private int roomNumber;
     private int itemsNeeded;
     private int itemsFound;
-    public int[] whichListItem = new int[2];
-    public int whichListItemIndex;
-    public int inventoryListIndex;
+    private int[] whichListItem = new int[2];
+    private int whichListItemIndex;
+    private int inventoryListIndex;
 
     public void OnTriggerStay(Collider other)
     {
@@ -98,9 +100,9 @@ public class SolvePuzzle : MonoBehaviour
                     GameController.inventoryList.RemoveAt(whichListItem[i]);
 
                     // Reloads the HUD.
-                    for (int j = 1; j < 6; j++)
+                    for (int j = 0; j < 12; j++)
                     {
-                        GameObject.Find("slot_" + j).GetComponent<Image>().sprite = null;
+                        GameObject.Find("slot_" + j).GetComponent<Image>().sprite = slotSprite;
                     }
 
                     int slotNumber = 1;

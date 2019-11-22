@@ -47,7 +47,7 @@ public class GameController : MonoBehaviour
         new string[0] { },
         new string[0] { },
         new string[0] { },
-        new string[0] { },
+        new string[1] {"loose_basketball"},
         new string[0] { },
         new string[0] { },
         new string[0] { },
