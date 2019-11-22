@@ -41,6 +41,21 @@ public class GameController : MonoBehaviour
     public string[] dataLines;
     public string[][] dataPairs;
 
+    // Sets up what rooms need which items.
+    public string[][] roomNeeds = new string[][]
+    {
+        new string[0] { },
+        new string[0] { },
+        new string[0] { },
+        new string[0] { },
+        new string[0] { },
+        new string[0] { },
+        new string[0] { },
+        new string[0] { },
+        new string[0] { },
+        new string[0] { }
+    };
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
