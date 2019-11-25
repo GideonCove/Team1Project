@@ -3,7 +3,12 @@ guid: d29235a43aefa524c96c7aa9f7768e1e
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 8k_earth
+    second: {fileID: 2800000, guid: b7247e307f7a12248bdacdd6f53e24be, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
