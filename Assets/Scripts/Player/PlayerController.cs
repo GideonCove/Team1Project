@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     {
         someObject = col.gameObject;
 
-        if (someObject.tag == "pickup" && Input.GetKeyDown(KeyCode.E) && GameController.max != GameController.inventoryList.Count)
+        if (someObject.tag == "pickup" && Input.GetKeyDown(KeyCode.E))
         {
             // Disables the mesh renderer if object is interactable.
             someObject.GetComponent<MeshRenderer>().enabled = false;
@@ -132,5 +132,10 @@ public class PlayerController : MonoBehaviour
         tex = GameController.inventoryList[whichOne - 1].itemIcon;
         mySprite = Sprite.Create(tex, new Rect(0, 0, 32, 32), new Vector2(1f, 1f));
         anObject.GetComponent<Image>().sprite = mySprite;
+
+        if (GameController.inventoryList.Count == GameController.max)
+        {
+            // Perform a game over function
+        }
     }
 }
