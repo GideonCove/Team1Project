@@ -653,9 +653,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorText: {fileID: 1477880326}
   nextLevel: playground
-  destinationX: -10.63
+  destinationX: -13.92
   destinationY: 1
-  destinationZ: -3.82
+  destinationZ: -3.18
   destinationDirection: 
 --- !u!65 &360486451
 BoxCollider:
