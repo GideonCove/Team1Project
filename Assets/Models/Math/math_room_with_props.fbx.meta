@@ -3,7 +3,42 @@ guid: 8395e7c58d552974589d42325ab3818a
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 68293
+    second: {fileID: 2800000, guid: 0eb51d88bc56c8542b29767f76cbe937, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PP26432513-White-subtle-grunge-wall-texture-with-peeling-paint
+    second: {fileID: 2800000, guid: c0957a3761a1cd3459303310be62f563, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_FloorsCheckerboard0046_4_seamless_S
+    second: {fileID: 2800000, guid: 3694aebe198bb294e938f4b57c51727d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_WoodPlanksPainted0344_2_seamless_S
+    second: {fileID: 2800000, guid: 1c1ca7f86ed1ce9478459e6d3ce803b9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Wood_PlanksBeamed_1K_albedo
+    second: {fileID: 2800000, guid: 92534a2e32f2b324db9454b2808e6012, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2800000, guid: 2b55a77d5e094b542837cb5d8b1a2c18, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_0019_base_color_2k
+    second: {fileID: 2800000, guid: 019111e8123b1ad43924c17e454bdafe, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
