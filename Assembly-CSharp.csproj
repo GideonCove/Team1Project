@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Objects\KeepLoaded.cs" />
     <Compile Include="Assets\Scripts\Objects\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Objects\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\Objects\Orbit.cs" />
     <Compile Include="Assets\Scripts\Objects\SolvePuzzle.cs" />
     <Compile Include="Assets\Scripts\Objects\SwingObject.cs" />
     <Compile Include="Assets\Scripts\Objects\Timer.cs" />
