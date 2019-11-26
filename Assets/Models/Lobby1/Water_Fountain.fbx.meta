@@ -3,7 +3,17 @@ guid: eeda1dc3f4ee0474986dd109095909b6
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_MetalLeaking0093_M
+    second: {fileID: 2800000, guid: 5a621592a94ef034c9c68f9b1fc84937, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: silver_rusted_chair_metal
+    second: {fileID: 2800000, guid: b35bb818f9a3b984b9abb75598dd5a51, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
