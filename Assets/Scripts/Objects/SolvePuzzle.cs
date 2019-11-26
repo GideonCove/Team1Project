@@ -128,6 +128,13 @@ public class SolvePuzzle : MonoBehaviour
                 }
 
                 Debug.Log("Post-Removal InventoryList Count: " + GameController.inventoryList.Count);
+
+                // If the puzzle releases a soul, subtract from counter and add time
+                if (gameObject.tag == "soul")
+                {
+                    Timer.soulsRemaining--;
+                    Timer.currentTime += 3 * 60;
+                }
             }
         }
     }

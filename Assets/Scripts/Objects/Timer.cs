@@ -6,11 +6,14 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public Text countdownText;
+    public Text soulsText;
     public float defaultTime = 5f;
 
-    private float currentTime = 0f;
+    public static float currentTime = 0f;
     private int minutes;
     private int seconds;
+
+    public static int soulsRemaining = 6;
 
     void Start()
     {
@@ -30,6 +33,7 @@ public class Timer : MonoBehaviour
         seconds = Mathf.FloorToInt(currentTime - minutes * 60);
 
         countdownText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        soulsText.text = soulsRemaining.ToString();
 
         if (minutes == 0 && seconds == 0)
         {
