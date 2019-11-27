@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &107911705
 Light:
   m_ObjectHideFlags: 0
@@ -732,7 +732,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 467c98063cb39ad49b2435db46887666,
         type: 3}
       propertyPath: m_Name
-      value: dumbell
+      value: dumbbell
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 467c98063cb39ad49b2435db46887666,
         type: 3}

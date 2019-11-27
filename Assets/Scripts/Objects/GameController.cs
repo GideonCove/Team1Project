@@ -66,6 +66,16 @@ public class GameController : MonoBehaviour
 
         // This adds to the itemDatabase using the Item class constructor we created in item.cs
         theItems.Add(new Item(0, "loose_basketball", true));
+        theItems.Add(new Item(1, "calculator", true));
+        theItems.Add(new Item(2, "dumbbell", true));
+        theItems.Add(new Item(3, "loose_screw", true));
+        theItems.Add(new Item(4, "ocarina", true));
+        theItems.Add(new Item(5, "padlock_key", true));
+        theItems.Add(new Item(6, "plunger", true));
+        theItems.Add(new Item(7, "pluto", true));
+        theItems.Add(new Item(8, "family_portrait", true));
+        theItems.Add(new Item(9, "school_flag", true));
+        theItems.Add(new Item(10, "whistle", true));
 
         foreach (Item anItem in theItems)
         {
