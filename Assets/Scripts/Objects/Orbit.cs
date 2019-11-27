@@ -2,8 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* 
+ * AUTHOR(S): Gideon, Mary
+ * DATE OF CREATION: 11/26/2019
+ * SCENE(S) WHERE USED: astronomy
+ * OBJECT(S) WHERE USED: planets
+ * DESCRIPTION: Orbits planets around eachother after puzzle solved.
+ */
 
-// Authors: Mary Rasley, Gideon Cove
 public class Orbit : MonoBehaviour
 {
     public GameObject insideSun;
