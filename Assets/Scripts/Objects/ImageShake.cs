@@ -20,6 +20,15 @@ public class ImageShake : MonoBehaviour
 
     private void Awake()
     {
+        Destroy(GameObject.Find("game_controller"));
+        GameController.inventoryList.Clear();
+        GameController.inventoryUsed.Clear();
+        GameController.theItems.Clear();
+
+        Destroy(GameObject.Find("player_canvas"));
+
+        Cursor.visible = true;
+
         originX = image.transform.localPosition.x;
         originY = image.transform.localPosition.y;
     }
