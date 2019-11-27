@@ -20,7 +20,7 @@ public class CameraRotation : MonoBehaviour
     public float optional = 1f;
 
     // The vertical angle at which the player is looking.
-    public float rotationX = 60f;
+    public float rotationX = 0f;
 
     // Clamping restrictions.
     public float minVertical = -45f;

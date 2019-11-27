@@ -1869,7 +1869,7 @@ MonoBehaviour:
   sensitivityHorizontal: 0
   sensitivityVertical: 10
   optional: 1
-  rotationX: 60
+  rotationX: 1.5
   minVertical: -45
   maxVertical: 45
 --- !u!81 &700123687
@@ -3278,7 +3278,7 @@ MonoBehaviour:
   destinationX: 0
   destinationY: 1
   destinationZ: 6.9
-  destinationDirection: 
+  destinationDirection: north
 --- !u!65 &1398892955
 BoxCollider:
   m_ObjectHideFlags: 0

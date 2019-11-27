@@ -1671,10 +1671,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorText: {fileID: 1330994431}
   nextLevel: lobbyOne
-  destinationX: 0.48
+  destinationX: -0.769
   destinationY: 1
-  destinationZ: 4.21
-  destinationDirection: 
+  destinationZ: 6.08
+  destinationDirection: north
 --- !u!65 &680904340
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1949,7 +1949,6 @@ MonoBehaviour:
   sensitivityHorizontal: 10
   sensitivityVertical: 10
   optional: 0
-  rotationX: 0
   minVertical: -45
   maxVertical: 45
 --- !u!114 &1243431833
@@ -2276,7 +2275,6 @@ MonoBehaviour:
   sensitivityHorizontal: 0
   sensitivityVertical: 10
   optional: 1
-  rotationX: 60
   minVertical: -45
   maxVertical: 45
 --- !u!81 &1558514268
