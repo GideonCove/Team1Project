@@ -15,6 +15,7 @@ public class GameController : MonoBehaviour
 {
     // Create the singleton
     public static GameController instance;
+    private static bool initialLoad = true;
 
     // Settings variables
     public static float brightness = 10;
@@ -57,6 +58,11 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
+        if (GameObject.Find("game_controller") && !initialLoad)
+        {
+            Destroy(gameObject);
+        }
+
         DontDestroyOnLoad(gameObject);
 
         // Loading sprites into array using the Resources directory.
@@ -111,5 +117,7 @@ public class GameController : MonoBehaviour
         {
             Debug.Log("key, value: " + keyValue.Key + ":" + keyValue.Value);
         }
+
+        initialLoad = false;
     }
 }
