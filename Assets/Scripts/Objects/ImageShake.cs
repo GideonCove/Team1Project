@@ -8,7 +8,7 @@ using UnityEngine.UI;
  * DATE OF CREATION: 11/27/2019
  * SCENE(S) WHERE USED: gameOver
  * OBJECT(S) WHERE USED: game_over_image
- * DESCRIPTION: Let's the game over image DANCE to it's content.
+ * DESCRIPTION: Let's the game over image DANCE to it's content, but also does a few other things behind the scenes.
  */
 
 public class ImageShake : MonoBehaviour
