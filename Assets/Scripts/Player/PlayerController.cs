@@ -96,6 +96,7 @@ public class PlayerController : MonoBehaviour
             if (x.itemName == someObject.name)
             {
                 foundIt = true;
+                Debug.Log("Found it!");
 
                 break;
             }

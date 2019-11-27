@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /* 
  * AUTHOR(S): Seth, Cameron, Gideon, Zach, Anthony
@@ -37,6 +38,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Timer.soulsRemaining--;
             Timer.currentTime += 3 * 60;
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
         }
 
         // Moves forward (negatively on the x-axis).
