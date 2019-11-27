@@ -2,8 +2,14 @@
 using System.Collections;
 using UnityEngine.UI;
 
-// Author: Gideon Cove
-// November twenty-sixth 2019
+/* 
+ * AUTHOR(S): Gideon
+ * DATE OF CREATION: 11/26/2019
+ * SCENE(S) WHERE USED: math
+ * OBJECT(S) WHERE USED: chalkboard_text
+ * DESCRIPTION: Fades in chalkboard_text when near.
+ */
+
 public class Fade : MonoBehaviour
 {
     public float fadeRate;
