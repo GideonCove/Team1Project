@@ -40,10 +40,6 @@ public class PlayerMovement : MonoBehaviour
             Timer.currentTime += 3 * 60;
         }
 
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-        }
-
         // Moves forward (negatively on the x-axis).
         if (Input.GetKey(KeyCode.W))
         {
