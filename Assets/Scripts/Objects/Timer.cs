@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/* 
+ * AUTHOR(S): Seth, Cameron, Gideon, Zach, Anthony
+ * DATE OF CREATION: 11/24/2019
+ * SCENE(S) WHERE USED: ALL
+ * OBJECT(S) WHERE USED: soul_timer
+ * DESCRIPTION: Sets a base timer and detects if it is over.
+ */
+
 public class Timer : MonoBehaviour
 {
     public Text countdownText;
