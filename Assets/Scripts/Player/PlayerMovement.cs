@@ -32,6 +32,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Temporary debug key for testing purposes REMOVE FOR FINAL BUILD
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            Timer.soulsRemaining--;
+            Timer.currentTime += 3 * 60;
+        }
+
         // Moves forward (negatively on the x-axis).
         if (Input.GetKey(KeyCode.W))
         {

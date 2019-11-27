@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
                 }
         }
 
-        Debug.Log("Successful teleportation in scene " + SceneManager.GetActiveScene().name);
+        Debug.Log("Successful teleportation in scene " + SceneManager.GetActiveScene().name + " to: " + destinationX + ", " + destinationZ);
     }
 
     private void OnTriggerStay(Collider col)

@@ -1975,7 +1975,6 @@ GameObject:
   - component: {fileID: 742788933}
   - component: {fileID: 742788932}
   - component: {fileID: 742788931}
-  - component: {fileID: 742788935}
   m_Layer: 0
   m_Name: west_door
   m_TagString: door
@@ -2056,24 +2055,6 @@ Transform:
   m_Father: {fileID: 1076413096}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &742788935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 742788930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df123a7556df5584ea6ea06a2cb01a7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorText: {fileID: 1488331327}
-  nextLevel: science
-  destinationX: 0
-  destinationY: 1
-  destinationZ: 6.9
-  destinationDirection: 
 --- !u!1 &765980497 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6855062863988604957, guid: 92d91e06cde7ae34d94d2bfe4f33b925,
@@ -3294,9 +3275,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorText: {fileID: 1488331327}
   nextLevel: science
-  destinationX: -8.68
+  destinationX: 0
   destinationY: 1
-  destinationZ: 1.41
+  destinationZ: 6.9
   destinationDirection: 
 --- !u!65 &1398892955
 BoxCollider:
