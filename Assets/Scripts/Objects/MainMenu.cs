@@ -36,6 +36,7 @@ public class MainMenu : MonoBehaviour
         {
             case "start_button":
                 SceneManager.LoadScene("setup");
+                Cursor.visible = false;
                 break;
             case "tutorial_button":
                 SceneManager.LoadScene("tutorial");
