@@ -136,7 +136,8 @@ public class PlayerController : MonoBehaviour
 
         if (GameController.inventoryList.Count == GameController.max)
         {
-            // Perform a game over function
+            GameController.gameOverReason = "You ran out of inventory space.";
+            SceneManager.LoadScene("gameOver");
         }
     }
 }

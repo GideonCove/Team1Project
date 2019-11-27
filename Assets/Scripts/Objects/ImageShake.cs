@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /* 
  * AUTHOR(S): Seth
@@ -13,6 +14,7 @@ using UnityEngine;
 public class ImageShake : MonoBehaviour
 {
     public GameObject image;
+    public Text gameOverText;
     public float shakeLimit = 1;
 
     private float originX;
@@ -20,6 +22,8 @@ public class ImageShake : MonoBehaviour
 
     private void Awake()
     {
+        gameOverText.text = GameController.gameOverReason;
+
         Destroy(GameObject.Find("game_controller"));
         GameController.inventoryList.Clear();
         GameController.inventoryUsed.Clear();

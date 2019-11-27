@@ -20,6 +20,7 @@ public class GameController : MonoBehaviour
     // Settings variables
     public static float brightness = 10;
     public static float speed = 10;
+    public static string gameOverReason = "Oh no, you lost AND don't even get a reason. Shoot.";
 
     // This is the list that holds invenotry for the game
     public static List<Item> inventoryList = new List<Item>();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 /* 
  * AUTHOR(S): Seth, Cameron, Gideon, Zach, Anthony
@@ -15,7 +16,7 @@ public class Timer : MonoBehaviour
 {
     public Text countdownText;
     public Text soulsText;
-    public float defaultTime = 5f;
+    public float defaultTime = 10f;
 
     public static float currentTime = 0f;
     private int minutes;
@@ -45,7 +46,8 @@ public class Timer : MonoBehaviour
 
         if (minutes == 0 && seconds == 0)
         {
-            // Perform game over functions.
+            GameController.gameOverReason = "You ran out of time.";
+            SceneManager.LoadScene("gameOver");
         }
     }
 }

@@ -628,6 +628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 899917142}
+  gameOverText: {fileID: 532989143}
   shakeLimit: 2
 --- !u!1 &1046964784
 GameObject:
