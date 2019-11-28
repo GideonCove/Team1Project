@@ -93,11 +93,12 @@ public class GameController : MonoBehaviour
         theItems.Add(new Item(3, "loose_screw", true));
         theItems.Add(new Item(4, "ocarina", true));
         theItems.Add(new Item(5, "padlock_key", true));
-        theItems.Add(new Item(6, "plunger", true));
-        theItems.Add(new Item(7, "pluto", true));
-        theItems.Add(new Item(8, "family_portrait", true));
-        theItems.Add(new Item(9, "school_flag", true));
-        theItems.Add(new Item(10, "whistle", true));
+        theItems.Add(new Item(6, "principals_key", true));
+        theItems.Add(new Item(7, "plunger", true));
+        theItems.Add(new Item(8, "pluto", true));
+        theItems.Add(new Item(9, "family_portrait", true));
+        theItems.Add(new Item(10, "school_flag", true));
+        theItems.Add(new Item(11, "whistle", true));
 
         foreach (Item anItem in theItems)
         {

@@ -168,6 +168,8 @@ public class SolvePuzzle : MonoBehaviour
                 // If the puzzle releases a soul, subtract from counter and add time
                 if (type == "soul")
                 {
+                    // Do soul animation
+
                     Timer.soulsRemaining--;
                     Timer.currentTime += 3 * 60;
                 }
