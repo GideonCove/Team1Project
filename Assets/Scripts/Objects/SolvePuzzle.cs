@@ -155,7 +155,7 @@ public class SolvePuzzle : MonoBehaviour
                     {
                         Texture2D tex;
                         Sprite mySprite;
-                        GameObject anObject = GameObject.Find("slot_" + slotNumber);
+                        GameObject anObject = GameObject.Find("slot_" + (slotNumber -1));
                         tex = anItem.itemIcon;
                         mySprite = Sprite.Create(tex, new Rect(0, 0, 32, 32), new Vector2(.5f, .5f));
                         anObject.GetComponent<Image>().sprite = mySprite;
