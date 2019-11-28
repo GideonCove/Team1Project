@@ -43,12 +43,27 @@ public class GameController : MonoBehaviour
     public string[][] dataPairs;
 
     // Sets up what rooms need which items.
-    public string[][] roomNeeds = new string[][]
+    public string[][] roomNeedsPrimary = new string[][]
     {
         new string[0] { },
         new string[0] { },
         new string[0] { },
         new string[1] {"loose_basketball"},
+        new string[0] { },
+        new string[0] { },
+        new string[0] { },
+        new string[0] { },
+        new string[0] { },
+        new string[0] { }
+    };
+
+    // Sets up what rooms need which items FOR SOULS.
+    public string[][] roomNeedsSecondary = new string[][]
+    {
+        new string[0] { },
+        new string[0] { },
+        new string[0] { },
+        new string[1] {"dumbbell"},
         new string[0] { },
         new string[0] { },
         new string[0] { },

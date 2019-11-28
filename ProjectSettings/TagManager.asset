@@ -6,6 +6,8 @@ TagManager:
   tags:
   - pickup
   - door
+  - soul
+  - secondary
   layers:
   - Default
   - TransparentFX

@@ -15,6 +15,7 @@ using UnityEngine.SceneManagement;
 public class SolvePuzzle : MonoBehaviour
 {
     public Sprite slotSprite;
+    public string type;
 
     private GameController gameController;
     private int roomNumber;
@@ -65,31 +66,66 @@ public class SolvePuzzle : MonoBehaviour
                     break;
             }
 
-            itemsNeeded = gameController.roomNeeds[roomNumber - 1].Length;
-            Debug.Log("[SolvePuzzle] Items needed: " + itemsNeeded);
-
-            whichListItem[0] = 0;
-            whichListItem[1] = 0;
-            whichListItemIndex = 0;
-            inventoryListIndex = 0;
-            itemsFound = 0;
-
-            foreach (string nameOfIt in gameController.roomNeeds[roomNumber - 1])
+            if (gameObject.tag != "secondary")
             {
+                itemsNeeded = gameController.roomNeedsPrimary[roomNumber - 1].Length;
+                Debug.Log("[SolvePuzzle] Items needed: " + itemsNeeded);
+
+                whichListItem[0] = 0;
+                whichListItem[1] = 0;
+                whichListItemIndex = 0;
                 inventoryListIndex = 0;
+                itemsFound = 0;
 
-                foreach (Item anItem in GameController.inventoryList)
+                foreach (string nameOfIt in gameController.roomNeedsPrimary[roomNumber - 1])
                 {
-                    if (anItem.itemName == nameOfIt)
-                    {
-                        Debug.Log("Found and matched item \"" + anItem.itemName + "\" in inventory at: " + inventoryListIndex);
-                        whichListItem[whichListItemIndex] = inventoryListIndex;
-                        whichListItemIndex++;
-                        itemsFound++;
-                        break;
-                    }
+                    inventoryListIndex = 0;
 
-                    inventoryListIndex++;
+                    foreach (Item anItem in GameController.inventoryList)
+                    {
+                        if (anItem.itemName == nameOfIt)
+                        {
+                            Debug.Log("Found and matched item \"" + anItem.itemName + "\" in inventory at: " + inventoryListIndex);
+                            whichListItem[whichListItemIndex] = inventoryListIndex;
+                            whichListItemIndex++;
+                            itemsFound++;
+                            break;
+                        }
+
+                        inventoryListIndex++;
+                    }
+                }
+            }
+
+            // If no items found in primary puzzle array, try the secondary one.
+            if (gameObject.tag == "secondary")
+            {
+                itemsNeeded = gameController.roomNeedsSecondary[roomNumber - 1].Length;
+                Debug.Log("[SolvePuzzle] Items needed: " + itemsNeeded);
+
+                whichListItem[0] = 0;
+                whichListItem[1] = 0;
+                whichListItemIndex = 0;
+                inventoryListIndex = 0;
+                itemsFound = 0;
+
+                foreach (string nameOfIt in gameController.roomNeedsSecondary[roomNumber - 1])
+                {
+                    inventoryListIndex = 0;
+
+                    foreach (Item anItem in GameController.inventoryList)
+                    {
+                        if (anItem.itemName == nameOfIt)
+                        {
+                            Debug.Log("Found and matched item \"" + anItem.itemName + "\" in inventory at: " + inventoryListIndex);
+                            whichListItem[whichListItemIndex] = inventoryListIndex;
+                            whichListItemIndex++;
+                            itemsFound++;
+                            break;
+                        }
+
+                        inventoryListIndex++;
+                    }
                 }
             }
 
@@ -130,10 +166,16 @@ public class SolvePuzzle : MonoBehaviour
                 Debug.Log("Post-Removal InventoryList Count: " + GameController.inventoryList.Count);
 
                 // If the puzzle releases a soul, subtract from counter and add time
-                if (gameObject.tag == "soul")
+                if (type == "soul")
                 {
                     Timer.soulsRemaining--;
                     Timer.currentTime += 3 * 60;
+                }
+
+                // If the type is item, spawns the item
+                if (type == "item")
+                {
+                    // Do item spawn
                 }
             }
         }
