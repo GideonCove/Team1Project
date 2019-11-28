@@ -3,7 +3,22 @@ guid: 02d2205096c496244aaabfa98b316cd4
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_MetalScratches0087_2_seamless_S
+    second: {fileID: 2800000, guid: b1ae3df6e2bb80a41a6012bce5213ca9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bbnet-texture2
+    second: {fileID: 2800000, guid: 6b0606ebae4547141ac57edd2bb28d3c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ddZtERd
+    second: {fileID: 2800000, guid: 6e217b324d944ca459d90208ea721ace, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

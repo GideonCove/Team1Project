@@ -57,7 +57,7 @@ public class GameController : MonoBehaviour
         new string[0] { }
     };
 
-    // Sets up what rooms need which items FOR SOULS.
+    // Sets up what rooms need which items for more puzzles.
     public string[][] roomNeedsSecondary = new string[][]
     {
         new string[0] { },
