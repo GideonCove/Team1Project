@@ -3531,7 +3531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countdownText: {fileID: 1823944065}
   soulsText: {fileID: 1174782356}
-  defaultTime: 1
+  defaultTime: 10
 --- !u!1 &1895765355
 GameObject:
   m_ObjectHideFlags: 0
