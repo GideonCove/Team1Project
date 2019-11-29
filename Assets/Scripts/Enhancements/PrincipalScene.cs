@@ -12,5 +12,17 @@ using UnityEngine;
 
 public class PrincipalScene : MonoBehaviour
 {
+    public AudioClip dialogue;
+
     private static bool played = false;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!played)
+        {
+            AudioSource.PlayClipAtPoint(dialogue, gameObject.transform.position);
+
+            played = true;
+        }
+    }
 }

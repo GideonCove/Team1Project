@@ -1637,6 +1637,32 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 674409891}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &674409930
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674409892}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.08
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &674409931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674409892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c80cfc6a8c60434cbd79078918b69b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 8300000, guid: 2295ff04bdb5ab9439cdcce783e77889, type: 3}
 --- !u!1 &680904338
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,6 +1975,7 @@ MonoBehaviour:
   sensitivityHorizontal: 10
   sensitivityVertical: 10
   optional: 0
+  rotationX: 0
   minVertical: -45
   maxVertical: 45
 --- !u!114 &1243431833
@@ -2275,6 +2302,7 @@ MonoBehaviour:
   sensitivityHorizontal: 0
   sensitivityVertical: 10
   optional: 1
+  rotationX: 0
   minVertical: -45
   maxVertical: 45
 --- !u!81 &1558514268
