@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 /* 
  * AUTHOR(S): Seth, Cameron, Gideon, Zach, Anthony
  * DATE OF CREATION: 11/21/2019
- * SCENE(S) WHERE USED: TBD
+ * SCENE(S) WHERE USED: ALL 
  * OBJECT(S) WHERE USED: TBD
  * DESCRIPTION: Allows for puzzles in rooms to be solved.
  */
@@ -138,7 +138,7 @@ public class SolvePuzzle : MonoBehaviour
 
                 for (int i = 0; i < itemsNeeded; i++)
                 {
-                    // Move the items from the inventoryList to inventoryUsed
+                    // Move the items from the inventoryList to inventoryUsed.
                     Debug.Log("InventoryList[" + whichListItem[i] + "]");
                     GameController.inventoryUsed.Add(GameController.inventoryList[whichListItem[i]]);
                     GameController.inventoryList.RemoveAt(whichListItem[i]);
@@ -165,19 +165,33 @@ public class SolvePuzzle : MonoBehaviour
 
                 Debug.Log("Post-Removal InventoryList Count: " + GameController.inventoryList.Count);
 
-                // If the puzzle releases a soul, subtract from counter and add time
+                // If the puzzle releases a soul, subtract from counter and add time.
                 if (type == "soul")
                 {
-                    // Do soul animation
+                    // Do specific soul action based on room if necessary.
+                    switch (SceneManager.GetActiveScene().name)
+                    {
+                        case "music":
+                            // Drop padlock key.
+                            break;
+                        case "astronomy":
+                            // Drop locker combo.
+                            break;
+                        case "principals":
+                            // End game.
+                            break;
+                    }
+
+                    // Do soul animation?
 
                     Timer.soulsRemaining--;
                     Timer.currentTime += 3 * 60;
                 }
 
-                // If the type is item, spawns the item
+                // If the type is item, spawns the item.
                 if (type == "item")
                 {
-                    // Do item spawn
+                    // Do item spawn.
                 }
             }
         }
