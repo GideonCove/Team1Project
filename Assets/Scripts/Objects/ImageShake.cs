@@ -14,6 +14,7 @@ using UnityEngine.UI;
 public class ImageShake : MonoBehaviour
 {
     public GameObject image;
+    public Sprite gameComplete;
     public Text gameOverText;
     public float shakeLimit = 1;
 
@@ -35,6 +36,11 @@ public class ImageShake : MonoBehaviour
 
         originX = image.transform.localPosition.x;
         originY = image.transform.localPosition.y;
+
+        if (GameController.gameOverOver)
+        {
+            gameObject.GetComponent<Image>().sprite = gameComplete;
+        }
     }
 
     // Update is called once per frame

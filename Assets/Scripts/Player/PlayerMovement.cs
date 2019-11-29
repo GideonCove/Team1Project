@@ -43,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.O))
         {
             SceneManager.LoadScene("gameOver");
+            GameController.gameOverReason = "Nothing even happened. You forced this, you monster.";
         }
 
         // Moves forward (negatively on the x-axis).
