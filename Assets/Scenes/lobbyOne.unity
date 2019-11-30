@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 237637366}
   - component: {fileID: 237637365}
   m_Layer: 5
-  m_Name: door_text
+  m_Name: interact_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.011764706, a: 1}
+  m_Color: {r: 0.6792453, g: 0, b: 0.007991323, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -422,7 +422,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '["SPACE" to open door]'
+  m_Text: '["SPACE" to interact]'
 --- !u!222 &237637366
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2159,6 +2159,7 @@ MonoBehaviour:
   destinationY: 1
   destinationZ: 0
   destinationDirection: east
+  locked: 0
 --- !u!65 &888389597
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3575,6 +3576,7 @@ MonoBehaviour:
   destinationY: 1
   destinationZ: 5.93
   destinationDirection: north
+  locked: 0
 --- !u!65 &1230606175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3809,6 +3811,7 @@ GameObject:
   - component: {fileID: 1328962533}
   - component: {fileID: 1328962532}
   - component: {fileID: 1328962531}
+  - component: {fileID: 1328962536}
   m_Layer: 0
   m_Name: south_door_trigger
   m_TagString: door
@@ -3834,6 +3837,7 @@ MonoBehaviour:
   destinationY: 1
   destinationZ: 0.021
   destinationDirection: west
+  locked: 1
 --- !u!65 &1328962532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3906,6 +3910,22 @@ Transform:
   m_Father: {fileID: 248790499}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1328962536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328962530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbf5cc3fb43ad249a0fefe2100fff5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotSprite: {fileID: 21300000, guid: 1d07d9db6a573d742a480097e18258c8, type: 3}
+  solveText: {fileID: 237637363}
+  type: item
+  secondary: 1
 --- !u!1 &1341402451
 GameObject:
   m_ObjectHideFlags: 0
@@ -4198,6 +4218,7 @@ MonoBehaviour:
   destinationY: 1
   destinationZ: -3.39
   destinationDirection: east
+  locked: 0
 --- !u!65 &1490106962
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5050,7 +5071,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: fce77f1636ba16e4ca19d40c5a79568c,
         type: 3}
       propertyPath: m_Name
-      value: Principal_Key
+      value: principals_key
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: fce77f1636ba16e4ca19d40c5a79568c,
         type: 3}
@@ -5060,17 +5081,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: fce77f1636ba16e4ca19d40c5a79568c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.14357948
+      value: -0.075
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fce77f1636ba16e4ca19d40c5a79568c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.78004336
+      value: -0.698
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fce77f1636ba16e4ca19d40c5a79568c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.4633937
+      value: 0.228
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fce77f1636ba16e4ca19d40c5a79568c,
         type: 3}
@@ -5152,7 +5173,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4, y: 1, z: 8}
+  m_Size: {x: 4.39, y: 6.86, z: 9.61}
   m_Center: {x: 0, y: 0, z: 2}
 --- !u!1 &1896376991 stripped
 GameObject:

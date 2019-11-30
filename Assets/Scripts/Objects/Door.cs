@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 /* 
  * AUTHOR(S): Seth, Cameron
@@ -20,6 +21,7 @@ public class Door : MonoBehaviour
     public float destinationY = 1;
     public float destinationZ;
     public string destinationDirection;
+    public bool locked = false;
 
     private GameObject player;
     private string currentScene;
@@ -32,28 +34,32 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        doorText.SetActive(true);
+        doorText.GetComponent<Text>().text = "[\"SPACE\" to open]";
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (gameObject.CompareTag("door") && currentScene == SceneManager.GetActiveScene().name)
+        if (!locked)
         {
+            doorText.SetActive(true);
 
-            if (doorText.activeInHierarchy == true && Input.GetKeyDown(KeyCode.Space))
+            if (gameObject.CompareTag("door") && currentScene == SceneManager.GetActiveScene().name)
             {
 
-                SceneManager.LoadScene(nextLevel);
-                Debug.Log("Scene changed to " + nextLevel);
+                if (doorText.activeInHierarchy == true && Input.GetKeyDown(KeyCode.Space))
+                {
+                    SceneManager.LoadScene(nextLevel);
+                    Debug.Log("Scene changed to " + nextLevel);
 
-                PlayerController.destinationX = destinationX;
-                PlayerController.destinationY = destinationY;
-                PlayerController.destinationZ = destinationZ;
-                PlayerController.destinationDirection = destinationDirection;
+                    PlayerController.destinationX = destinationX;
+                    PlayerController.destinationY = destinationY;
+                    PlayerController.destinationZ = destinationZ;
+                    PlayerController.destinationDirection = destinationDirection;
 
-                //Teleport(destinationX, destinationY, destinationZ, destinationDirection);
+                    //Teleport(destinationX, destinationY, destinationZ, destinationDirection);
+                }
+
             }
-            
         }
     }
 

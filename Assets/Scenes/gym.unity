@@ -333,7 +333,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotSprite: {fileID: 21300000, guid: 1d07d9db6a573d742a480097e18258c8, type: 3}
+  solveText: {fileID: 1808747752}
   type: soul
+  secondary: 0
 --- !u!135 &288256990
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1503,7 +1505,7 @@ GameObject:
   - component: {fileID: 1808747755}
   - component: {fileID: 1808747754}
   m_Layer: 5
-  m_Name: door_text
+  m_Name: interact_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1535,7 +1537,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808747752}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -1799,6 +1801,7 @@ MonoBehaviour:
   destinationY: 1
   destinationZ: 0.05
   destinationDirection: east
+  locked: 0
 --- !u!65 &1897029707
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1865,7 +1868,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897029705}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.225825, y: 4.0498505, z: 9.42}
+  m_LocalPosition: {x: 8.225825, y: 4.0498505, z: 8.69}
   m_LocalScale: {x: 2.1648774, y: 3.482422, z: 2.968913}
   m_Children: []
   m_Father: {fileID: 996808184}

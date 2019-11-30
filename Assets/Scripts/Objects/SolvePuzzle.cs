@@ -15,7 +15,9 @@ using UnityEngine.SceneManagement;
 public class SolvePuzzle : MonoBehaviour
 {
     public Sprite slotSprite;
+    public GameObject solveText;
     public string type;
+    public bool secondary = false;
 
     private GameController gameController;
     private int roomNumber;
@@ -24,9 +26,37 @@ public class SolvePuzzle : MonoBehaviour
     private int[] whichListItem = new int[2];
     private int whichListItemIndex;
     private int inventoryListIndex;
+    public static bool padlockUnlocked = false;
+    public static bool principalUnlocked = false;
+
+    private void Awake()
+    {
+        solveText.SetActive(false);
+
+        if ((principalUnlocked && SceneManager.GetActiveScene().name == "lobbyOne") || (padlockUnlocked && SceneManager.GetActiveScene().name == "playground"))
+        {
+            gameObject.GetComponent<Door>().locked = false;
+            Destroy(gameObject.GetComponent<SolvePuzzle>());
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (SceneManager.GetActiveScene().name == "lobbyOne" || SceneManager.GetActiveScene().name == "playground" && gameObject.tag == "door")
+        {
+            solveText.GetComponent<Text>().text = "[\"SPACE\" to unlock]";
+        }
+        else
+        {
+            solveText.GetComponent<Text>().text = "[\"SPACE\" to interact]";
+        }
+    }
 
     public void OnTriggerStay(Collider other)
     {
+        solveText.SetActive(true);
+
         if (Input.GetKey(KeyCode.Space))
         {
             gameController = GameObject.Find("game_controller").GetComponent<GameController>();
@@ -66,7 +96,7 @@ public class SolvePuzzle : MonoBehaviour
                     break;
             }
 
-            if (gameObject.tag != "secondary")
+            if (!secondary)
             {
                 itemsNeeded = gameController.roomNeedsPrimary[roomNumber - 1].Length;
                 Debug.Log("[SolvePuzzle] Items needed: " + itemsNeeded);
@@ -98,7 +128,7 @@ public class SolvePuzzle : MonoBehaviour
             }
 
             // If no items found in primary puzzle array, try the secondary one.
-            if (gameObject.tag == "secondary")
+            if (secondary)
             {
                 itemsNeeded = gameController.roomNeedsSecondary[roomNumber - 1].Length;
                 Debug.Log("[SolvePuzzle] Items needed: " + itemsNeeded);
@@ -180,20 +210,41 @@ public class SolvePuzzle : MonoBehaviour
                         case "principals":
                             // End game.
                             break;
+                        default:
+                            Timer.soulsRemaining--;
+                            Timer.currentTime += 3 * 60;
+                            break;
                     }
 
                     // Do soul animation?
-
-                    Timer.soulsRemaining--;
-                    Timer.currentTime += 3 * 60;
                 }
 
                 // If the type is item, spawns the item.
                 if (type == "item")
                 {
-                    // Do item spawn.
+                    switch (SceneManager.GetActiveScene().name)
+                    {
+                        case "playground":
+                            gameObject.GetComponent<Door>().locked = false;
+                            padlockUnlocked = true;
+                            break;
+                        case "lobbyOne":
+                            gameObject.GetComponent<Door>().locked = false;
+                            solveText.GetComponent<Text>().text = "[\"SPACE\" to open]";
+                            principalUnlocked = true;
+                            break;
+                    }
+
+                    // Do item spawn
                 }
+
+                solveText.SetActive(false);
             }
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        solveText.SetActive(false);
     }
 }

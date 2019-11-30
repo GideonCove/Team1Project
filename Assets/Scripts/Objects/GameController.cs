@@ -62,7 +62,7 @@ public class GameController : MonoBehaviour
     public string[][] roomNeedsSecondary = new string[][]
     {
         new string[1] {"dumbbell"},
-        new string[0] { },
+        new string[1] {"padlock_key"},
         new string[0] { },
         new string[0] { },
         new string[1] {"principals_key"},
