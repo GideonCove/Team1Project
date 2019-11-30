@@ -31,6 +31,8 @@ public class PlayerController : MonoBehaviour
 
         itemText.SetActive(false);
 
+        DisableCollectedItems();
+
         switch (destinationDirection)
         {
             case "north":
@@ -77,6 +79,27 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         itemText.SetActive(false);
+    }
+
+    // Disables previously collected items
+    public void DisableCollectedItems()
+    {
+        // This is used to disable all the items in the room that were previously collected
+        foreach (Item item in GameController.inventoryList)
+        {
+            if (GameObject.Find(item.itemName) != null)
+            {
+                Destroy(GameObject.Find(item.itemName));
+            }
+        }
+
+        foreach (Item item in GameController.inventoryUsed)
+        {
+            if (GameObject.Find(item.itemName) != null)
+            {
+                Destroy(GameObject.Find(item.itemName));
+            }
+        }
     }
 
     // Find the object collided with in the itemDatabase.
