@@ -14,7 +14,7 @@ public class NoteSpawner : MonoBehaviour
 {
     public GameObject note;
     public float radius = 10f;
-    public int notesPerSecond = 3;
+    public int notesPerSecond = 4;
 
     private GameObject newNote;
     private Vector3 position;
@@ -27,7 +27,7 @@ public class NoteSpawner : MonoBehaviour
 
     void NoteSpawn()
     {
-        position = new Vector3(gameObject.transform.position.x + Random.Range(-radius, radius), 0f, gameObject.transform.position.z + Random.Range(-radius, radius));
+        position = new Vector3(gameObject.transform.position.x + Random.Range(-radius, radius), gameObject.transform.position.y, gameObject.transform.position.z + Random.Range(-radius, radius));
         rotation = new Quaternion(0, Random.Range(0, 359), 0, 0);
 
         newNote = Instantiate(note, position, rotation);
