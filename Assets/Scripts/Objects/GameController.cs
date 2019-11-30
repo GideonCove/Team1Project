@@ -46,26 +46,26 @@ public class GameController : MonoBehaviour
     // Sets up what rooms need which items.
     public string[][] roomNeedsPrimary = new string[][]
     {
+        new string[1] {"plunger"},
+        new string[2] {"loose_screw", "screwdriver"},
+        new string[1] {"calculator"},
+        new string[1] {"whistle"},
+        new string[1] {"locker_combo"},
+        new string[1] {"ocarina"},
         new string[0] { },
-        new string[0] { },
-        new string[0] { },
-        new string[1] {"loose_basketball"},
-        new string[0] { },
-        new string[0] { },
-        new string[0] { },
-        new string[0] { },
-        new string[0] { },
-        new string[0] { }
+        new string[2] {"family_portrait", "school_flag"},
+        new string[3] {"baking_soda", "water", "vinegar"},
+        new string[2] {"pluto", "sun"}
     };
 
     // Sets up what rooms need which items for more puzzles.
     public string[][] roomNeedsSecondary = new string[][]
     {
-        new string[0] { },
-        new string[0] { },
-        new string[0] { },
         new string[1] {"dumbbell"},
         new string[0] { },
+        new string[0] { },
+        new string[0] { },
+        new string[1] {"principals_key"},
         new string[0] { },
         new string[0] { },
         new string[0] { },
