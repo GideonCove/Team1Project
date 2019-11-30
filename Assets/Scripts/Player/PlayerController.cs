@@ -15,6 +15,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public GameObject someObject;
+    public GameObject itemText;
 
     private int theOne = -1;
 
@@ -27,6 +28,8 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         gameObject.transform.position = new Vector3(destinationX, destinationY, destinationZ);
+
+        itemText.SetActive(false);
 
         switch (destinationDirection)
         {
@@ -59,14 +62,21 @@ public class PlayerController : MonoBehaviour
     {
         someObject = col.gameObject;
 
-        if (someObject.tag == "pickup" && Input.GetKeyDown(KeyCode.E))
+        if (someObject.tag == "pickup")
         {
-            // Disables the mesh renderer if object is interactable.
-            someObject.GetComponent<MeshRenderer>().enabled = false;
+            itemText.SetActive(true);
 
-            FindInDatabase();
-            IsItHere();
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                FindInDatabase();
+                IsItHere();
+            }
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        itemText.SetActive(false);
     }
 
     // Find the object collided with in the itemDatabase.
@@ -107,6 +117,12 @@ public class PlayerController : MonoBehaviour
         {
             AddItemToInventory(GameController.theItems[theOne]);
             ShowInPanel();
+
+            itemText.SetActive(false);
+
+            Destroy(someObject);
+            someObject.GetComponent<Collider>().enabled = false;
+            Debug.Log("Destroyed");
         }
     }
 
