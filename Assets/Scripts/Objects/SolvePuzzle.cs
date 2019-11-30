@@ -208,7 +208,9 @@ public class SolvePuzzle : MonoBehaviour
                             // Drop locker combo.
                             break;
                         case "principals":
-                            // End game.
+                            GameController.gameOverOver = true;
+                            GameController.gameOverReason = "You saved your sister and escaped the school! Congrats!";
+                            SceneManager.LoadScene("principals");
                             break;
                         default:
                             Timer.soulsRemaining--;
