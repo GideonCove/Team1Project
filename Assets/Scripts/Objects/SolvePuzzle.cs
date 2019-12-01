@@ -70,30 +70,39 @@ public class SolvePuzzle : MonoBehaviour
                 case "bathroom":
                     roomNumber = 1;
                     break;
+
                 case "playground":
                     roomNumber = 2;
                     break;
+
                 case "math":
                     roomNumber = 3;
                     break;
+
                 case "gym":
                     roomNumber = 4;
                     break;
+
                 case "lobbyOne":
                     roomNumber = 5;
                     break;
+
                 case "music":
                     roomNumber = 6;
                     break;
+
                 case "lobbyTwo":
                     roomNumber = 7;
                     break;
+
                 case "principals":
                     roomNumber = 8;
                     break;
+
                 case "science":
                     roomNumber = 9;
                     break;
+
                 case "astronomy":
                     roomNumber = 10;
                     break;
@@ -209,14 +218,17 @@ public class SolvePuzzle : MonoBehaviour
                         case "music":
                             // Drop padlock key.
                             break;
+
                         case "astronomy":
                             // Drop locker combo.
                             break;
+
                         case "principals":
                             GameController.gameOverOver = true;
                             GameController.gameOverReason = "You saved your sister and escaped the school! Congrats!";
                             SceneManager.LoadScene("principals");
                             break;
+
                         default:
                             Timer.soulsRemaining--;
                             Timer.currentTime += 3 * 60;
@@ -237,16 +249,19 @@ public class SolvePuzzle : MonoBehaviour
                             solveText.GetComponent<Text>().text = "[\"SPACE\" to open]";
                             padlockUnlocked = true;
                             break;
+
                         case "lobbyOne":
                             gameObject.GetComponent<Door>().locked = false;
                             solveText.GetComponent<Text>().text = "[\"SPACE\" to open]";
                             principalUnlocked = true;
                             break;
-                    }
 
-                    // Do item spawn
-                    GameObject item = GameObject.Instantiate(dropItem, other.gameObject.transform.position, new Quaternion(0, 0, 0, 0));
-                    item.name = dropItemName;
+                        default:
+                            // Do item spawn
+                            GameObject item = GameObject.Instantiate(dropItem, other.gameObject.transform.position, new Quaternion(0, 0, 0, 0));
+                            item.name = dropItemName;
+                            break;
+                    }
                 }
                 
                 solveText.SetActive(false);
