@@ -9,3 +9,6 @@ pluto:pluto
 family_portrait:family_portrait
 school_flag:school_flag
 whistle:whistle
+water:water
+vinegar:vinegar
+baking_soda:baking_soda

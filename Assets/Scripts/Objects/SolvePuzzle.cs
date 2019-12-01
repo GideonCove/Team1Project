@@ -16,6 +16,8 @@ public class SolvePuzzle : MonoBehaviour
 {
     public Sprite slotSprite;
     public GameObject solveText;
+    public GameObject dropItem;
+    public string dropItemName;
     public GameObject soulModel;
     public string type;
     public bool secondary = false;
@@ -192,6 +194,8 @@ public class SolvePuzzle : MonoBehaviour
                         anObject.GetComponent<Image>().sprite = mySprite;
                         slotNumber++;
                     }
+
+                    Destroy(gameObject.GetComponent<SolvePuzzle>());
                 }
 
                 Debug.Log("Post-Removal InventoryList Count: " + GameController.inventoryList.Count);
@@ -220,7 +224,7 @@ public class SolvePuzzle : MonoBehaviour
                     }
 
                     // Spawn a soul prefab that has a script attached.
-                    GameObject soul = GameObject.Instantiate(soulModel, new Vector3 (gameObject.transform.position.x, 1, gameObject.transform.position.z), new Quaternion(0, 0, 0, 0));
+                    GameObject soul = GameObject.Instantiate(soulModel, new Vector3 (gameObject.transform.position.x, 2, gameObject.transform.position.z), new Quaternion(0, 0, 0, 0));
                 }
 
                 // If the type is item, spawns the item.
@@ -241,8 +245,10 @@ public class SolvePuzzle : MonoBehaviour
                     }
 
                     // Do item spawn
+                    GameObject item = GameObject.Instantiate(dropItem, other.gameObject.transform.position, new Quaternion(0, 0, 0, 0));
+                    item.name = dropItemName;
                 }
-
+                
                 solveText.SetActive(false);
             }
         }
