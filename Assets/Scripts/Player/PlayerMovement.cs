@@ -13,9 +13,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // GameObject array created for keeping inventory.
-    static public GameObject[] inventory = new GameObject[12];
-
     // This script is used to allow the arrow keys to move the player around the game world on the x and z-axes.
     public Vector3 xVector = new Vector3(1f, 0f, 0f);
     public Vector3 zVector = new Vector3(0f, 0f, 1f);
@@ -27,11 +24,15 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        GameObject.Find("flashlight").GetComponent<Light>().range = GameController.brightness;
+
+        if (SceneManager.GetActiveScene().name != "tutorial")
+        {
+            GameObject.Find("flashlight").GetComponent<Light>().range = GameController.brightness;
+        }
+
         moveSpeed = GameController.speed;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         // Temporary debug key for testing purposes REMOVE FOR FINAL BUILD

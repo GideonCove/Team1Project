@@ -766,7 +766,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443625061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.38, y: -0.45, z: 4.24}
+  m_LocalPosition: {x: -3.5, y: -0.45, z: 4.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 571364798}
@@ -785,8 +785,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   note: {fileID: 6180330319954503308, guid: 130296f6c2defab44b71f98be83c6664, type: 3}
-  radius: 3
-  notesPerSecond: 4
+  radius: 6
+  notesPerSecond: 1
 --- !u!135 &443625064
 SphereCollider:
   m_ObjectHideFlags: 0
