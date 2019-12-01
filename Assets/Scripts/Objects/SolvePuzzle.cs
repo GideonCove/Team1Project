@@ -230,6 +230,7 @@ public class SolvePuzzle : MonoBehaviour
                     {
                         case "playground":
                             gameObject.GetComponent<Door>().locked = false;
+                            solveText.GetComponent<Text>().text = "[\"SPACE\" to open]";
                             padlockUnlocked = true;
                             break;
                         case "lobbyOne":
