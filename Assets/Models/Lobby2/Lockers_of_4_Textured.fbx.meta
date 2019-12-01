@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Red_rust_metal
-    second: {fileID: 2800000, guid: af7029379e6f4394381af25da02e4299, type: 3}
+    second: {fileID: 2800000, guid: fd3f0fa48085e45419c2900d1f4421e5, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: silver_rusted_chair_metal
-    second: {fileID: 2800000, guid: 002aef687d8115149ac8ad842c56fbe3, type: 3}
+    second: {fileID: 2800000, guid: f08687c5a50c7294ead47d58bd579da3, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

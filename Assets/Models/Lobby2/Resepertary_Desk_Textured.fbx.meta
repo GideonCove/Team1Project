@@ -8,17 +8,17 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TexturesCom_Fiberglass0037_1_M
-    second: {fileID: 2800000, guid: ef99b42ab5aded6488f8a14aa3e94354, type: 3}
+    second: {fileID: 2800000, guid: 49eff4e6539786d4494087039017d773, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TexturesCom_MetalBare0115_2_M
-    second: {fileID: 2800000, guid: 11b1cc946e026af4bbf8da630aef7f73, type: 3}
+    second: {fileID: 2800000, guid: 91bbe2d5c47fed14ebd6dc9f35cbe45e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TexturesCom_WoodFine0011_seamless_S
-    second: {fileID: 2800000, guid: eceb7bda30aa0864880fa6849a982c85, type: 3}
+    second: {fileID: 2800000, guid: e80c0e1eb7041fb4da6b379d4fd1e32f, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
