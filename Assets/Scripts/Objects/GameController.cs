@@ -100,6 +100,9 @@ public class GameController : MonoBehaviour
         theItems.Add(new Item(9, "family_portrait", true));
         theItems.Add(new Item(10, "school_flag", true));
         theItems.Add(new Item(11, "whistle", true));
+        theItems.Add(new Item(12, "water", true));
+        theItems.Add(new Item(13, "vinegar", true));
+        theItems.Add(new Item(14, "baking_soda", true));
 
         foreach (Item anItem in theItems)
         {
