@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     
     public Rigidbody rb;
+    private float timeHeld = 0;
 
     private void Start()
     {
@@ -44,6 +45,23 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene("gameOver");
             GameController.gameOverReason = "Nothing even happened. You forced this, you monster.";
+        }
+
+        // Quits game after 2 seconds of holding ESC.
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            timeHeld += 1 * Time.deltaTime;
+
+            if (timeHeld >= 2)
+            {
+                Application.Quit();
+            }
+        }
+
+        // Resets timeHeld when ESC is released.
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            timeHeld = 0;
         }
 
         // Moves forward (negatively on the x-axis).
