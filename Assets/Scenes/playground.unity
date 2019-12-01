@@ -538,7 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3289,6 +3289,7 @@ MonoBehaviour:
   destinationY: 1
   destinationZ: -6.79
   destinationDirection: east
+  locked: 0
 --- !u!65 &1896766070
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3491,6 +3492,7 @@ MonoBehaviour:
   destinationY: 1
   destinationZ: -8.18
   destinationDirection: south
+  locked: 0
 --- !u!65 &1994758816
 BoxCollider:
   m_ObjectHideFlags: 0

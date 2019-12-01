@@ -588,6 +588,7 @@ MonoBehaviour:
   destinationY: 1
   destinationZ: -15.81
   destinationDirection: 
+  locked: 0
 --- !u!65 &736339966
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1013,6 +1014,7 @@ MonoBehaviour:
   destinationY: 1
   destinationZ: -9.17
   destinationDirection: south
+  locked: 0
 --- !u!65 &1445606375
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1378,7 +1380,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
