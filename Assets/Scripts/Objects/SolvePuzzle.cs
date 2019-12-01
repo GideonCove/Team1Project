@@ -16,6 +16,7 @@ public class SolvePuzzle : MonoBehaviour
 {
     public Sprite slotSprite;
     public GameObject solveText;
+    public GameObject soulModel;
     public string type;
     public bool secondary = false;
 
@@ -57,7 +58,7 @@ public class SolvePuzzle : MonoBehaviour
     {
         solveText.SetActive(true);
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             gameController = GameObject.Find("game_controller").GetComponent<GameController>();
 
@@ -218,7 +219,8 @@ public class SolvePuzzle : MonoBehaviour
                             break;
                     }
 
-                    // Do soul animation?
+                    // Spawn a soul prefab that has a script attached.
+                    GameObject soul = GameObject.Instantiate(soulModel, new Vector3 (gameObject.transform.position.x, 1, gameObject.transform.position.z), new Quaternion(0, 0, 0, 0));
                 }
 
                 // If the type is item, spawns the item.
