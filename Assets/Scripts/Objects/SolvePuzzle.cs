@@ -46,7 +46,7 @@ public class SolvePuzzle : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (SceneManager.GetActiveScene().name == "lobbyOne" || SceneManager.GetActiveScene().name == "playground" && gameObject.tag == "door")
+        if (((SceneManager.GetActiveScene().name == "lobbyOne" && !principalUnlocked) || (SceneManager.GetActiveScene().name == "playground" && !padlockUnlocked)) && gameObject.tag == "door")
         {
             solveText.GetComponent<Text>().text = "[\"SPACE\" to unlock]";
         }
@@ -225,6 +225,11 @@ public class SolvePuzzle : MonoBehaviour
                             // Drop padlock key.
                             GameObject key = GameObject.Instantiate(dropItem, soul.transform.position, new Quaternion(0, 0, 0, 0));
                             key.name = dropItemName;
+                            break;
+
+                        case "playground":
+                            // Fix merry-go-round.
+                            gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
                             break;
 
                         case "astronomy":
