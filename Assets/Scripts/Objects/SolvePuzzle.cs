@@ -230,6 +230,7 @@ public class SolvePuzzle : MonoBehaviour
                         case "playground":
                             // Fix merry-go-round.
                             gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
+                            MGRCheck.mgrSolved = true;
                             break;
 
                         case "astronomy":

@@ -130,7 +130,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 17a27bcd509318c4f813a175c24e0229,
         type: 3}
       propertyPath: m_Name
-      value: Loose_Screw
+      value: loose_screw
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 17a27bcd509318c4f813a175c24e0229,
         type: 3}
@@ -714,8 +714,6 @@ MonoBehaviour:
   sensitivityVertical: 10
   optional: 0
   rotationX: 0
-  minVertical: -45
-  maxVertical: 45
 --- !u!114 &364640877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3156,8 +3154,6 @@ MonoBehaviour:
   sensitivityVertical: 10
   optional: 1
   rotationX: 0
-  minVertical: -45
-  maxVertical: 45
 --- !u!81 &1716396686
 AudioListener:
   m_ObjectHideFlags: 0

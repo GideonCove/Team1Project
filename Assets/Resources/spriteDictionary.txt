@@ -4,6 +4,7 @@ dumbbbell:dumbbell
 loose_screw:loose_screw
 ocarina:ocarina
 padlock_key:padlock_key
+principals_key:principals_key
 plunger:plunger
 pluto:pluto
 family_portrait:family_portrait
@@ -12,3 +13,4 @@ whistle:whistle
 water:water
 vinegar:vinegar
 baking_soda:baking_soda
+screwdriver:screwdriver

@@ -23,8 +23,8 @@ public class CameraRotation : MonoBehaviour
     public float rotationX = 0f;
 
     // Clamping restrictions.
-    public float minVertical = -45f;
-    public float maxVertical = 45f;
+    private float minVertical = -70f;
+    private float maxVertical = 70f;
 
     void Update()
     {

@@ -1565,8 +1565,6 @@ MonoBehaviour:
   sensitivityVertical: 10
   optional: 1
   rotationX: 0
-  minVertical: -45
-  maxVertical: 45
 --- !u!81 &1065766250
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1725,10 +1723,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: screwdriver
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: d5faa2e3198fb94429b7fcd17d3634f5,
+        type: 3}
+      propertyPath: m_TagString
+      value: pickup
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d5faa2e3198fb94429b7fcd17d3634f5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.74657
+      value: -3.79
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d5faa2e3198fb94429b7fcd17d3634f5,
         type: 3}
@@ -1738,7 +1741,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d5faa2e3198fb94429b7fcd17d3634f5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.230072
+      value: -10.6
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d5faa2e3198fb94429b7fcd17d3634f5,
         type: 3}
@@ -1748,7 +1751,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d5faa2e3198fb94429b7fcd17d3634f5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.24366298
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d5faa2e3198fb94429b7fcd17d3634f5,
         type: 3}
@@ -1758,7 +1761,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d5faa2e3198fb94429b7fcd17d3634f5,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.96985996
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d5faa2e3198fb94429b7fcd17d3634f5,
         type: 3}
@@ -1773,7 +1776,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d5faa2e3198fb94429b7fcd17d3634f5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -28.206001
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d5faa2e3198fb94429b7fcd17d3634f5,
         type: 3}
@@ -1803,6 +1806,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1196481571}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1196481573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: d5faa2e3198fb94429b7fcd17d3634f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1196481571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1196481574
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196481573}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1197144752 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4821084750769023325, guid: 2d95068d7f1cffb41adceb6e92627069,
@@ -2167,8 +2189,6 @@ MonoBehaviour:
   sensitivityVertical: 10
   optional: 0
   rotationX: 0
-  minVertical: -45
-  maxVertical: 45
 --- !u!114 &1457192497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2393,6 +2413,18 @@ MonoBehaviour:
     type: 3}
   type: soul
   secondary: 0
+--- !u!114 &1576241878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576241875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53f640d529cd764ca0935a87b357a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1596387254 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1968738677580286031, guid: 2d95068d7f1cffb41adceb6e92627069,
