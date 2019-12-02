@@ -257,7 +257,7 @@ public class SolvePuzzle : MonoBehaviour
                         case "principals":
                             GameController.gameOverOver = true;
                             GameController.gameOverReason = "You saved your sister and escaped the school! Congrats!";
-                            SceneManager.LoadScene("principals");
+                            SceneManager.LoadScene("gameOver");
                             break;
                     }
                 }
