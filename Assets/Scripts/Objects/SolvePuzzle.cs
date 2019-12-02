@@ -33,7 +33,7 @@ public class SolvePuzzle : MonoBehaviour
     public static bool principalUnlocked = false;
     public static bool planetsSolved = false;
 
-    private void Awake()
+    private void Start()
     {
         solveText.SetActive(false);
 

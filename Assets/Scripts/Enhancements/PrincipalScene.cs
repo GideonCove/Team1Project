@@ -21,7 +21,7 @@ public class PrincipalScene : MonoBehaviour
         if (!played)
         {
             // Remove commenting once game is completed or something, don't want the sound misfiring in class.
-            //AudioSource.PlayClipAtPoint(dialogue, gameObject.transform.position);
+            AudioSource.PlayClipAtPoint(dialogue, gameObject.transform.position);
 
             played = true;
         }
