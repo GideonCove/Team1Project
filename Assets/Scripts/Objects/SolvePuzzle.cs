@@ -172,6 +172,13 @@ public class SolvePuzzle : MonoBehaviour
                 }
             }
 
+            int whichTemp = whichListItem[0];
+            if (whichListItem[1] > whichListItem[0])
+            {
+                whichListItem[0] = whichListItem[1];
+                whichListItem[1] = whichTemp;
+            }
+
             Debug.Log("whichListItem[0]: " + whichListItem[0] + "\nwhichListItem[1]: " + whichListItem[1]);
             Debug.Log("itemsNeeded: " + itemsNeeded + "\nitemsFound: " + itemsFound);
 
@@ -198,7 +205,7 @@ public class SolvePuzzle : MonoBehaviour
                     {
                         Texture2D tex;
                         Sprite mySprite;
-                        GameObject anObject = GameObject.Find("slot_" + (slotNumber -1));
+                        GameObject anObject = GameObject.Find("slot_" + (slotNumber - 1));
                         tex = anItem.itemIcon;
                         mySprite = Sprite.Create(tex, new Rect(0, 0, 32, 32), new Vector2(.5f, .5f));
                         anObject.GetComponent<Image>().sprite = mySprite;
