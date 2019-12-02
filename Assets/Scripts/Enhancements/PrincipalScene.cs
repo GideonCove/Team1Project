@@ -14,7 +14,7 @@ public class PrincipalScene : MonoBehaviour
 {
     public AudioClip dialogue;
 
-    private static bool played = false;
+    public static bool played = false;
 
     private void OnTriggerEnter(Collider other)
     {
