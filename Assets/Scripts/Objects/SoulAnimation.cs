@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SoulAnimation : MonoBehaviour
 {
+    private float originalY;
+
+    private void Start()
+    {
+        originalY = gameObject.transform.position.y;
+    }
+
     void Update()
     {
         transform.LookAt(GameObject.Find("player").transform);
@@ -17,6 +24,10 @@ public class SoulAnimation : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+        }
+        else
+        {
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, originalY + Mathf.PingPong(0.05f * Time.time, 0.1f), gameObject.transform.position.z);
         }
     }
 }

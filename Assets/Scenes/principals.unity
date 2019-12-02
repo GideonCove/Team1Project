@@ -678,7 +678,7 @@ PrefabInstance:
     - target: {fileID: 3757884119317095174, guid: a95f9feb2b3ead744b0a33fa9e64f7a1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.12
+      value: 3.281
       objectReference: {fileID: 0}
     - target: {fileID: 3757884119317095174, guid: a95f9feb2b3ead744b0a33fa9e64f7a1,
         type: 3}
@@ -723,7 +723,7 @@ PrefabInstance:
     - target: {fileID: 3757884119317095174, guid: a95f9feb2b3ead744b0a33fa9e64f7a1,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.1
+      value: -0.025
       objectReference: {fileID: 0}
     - target: {fileID: 3757884119317095174, guid: a95f9feb2b3ead744b0a33fa9e64f7a1,
         type: 3}
@@ -1839,7 +1839,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2.3247, z: 1.6512386}
   m_Children: []
   m_Father: {fileID: 1559006611}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &704507096 stripped
 GameObject:
@@ -2403,11 +2403,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bbf5cc3fb43ad249a0fefe2100fff5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotSprite: {fileID: 0}
-  solveText: {fileID: 0}
+  slotSprite: {fileID: 21300000, guid: 1d07d9db6a573d742a480097e18258c8, type: 3}
+  solveText: {fileID: 1330994431}
   dropItem: {fileID: 0}
   dropItemName: 
-  soulModel: {fileID: 0}
+  soulModel: {fileID: 1483364709}
   type: soul
   secondary: 0
 --- !u!135 &1483364712
@@ -2575,10 +2575,10 @@ Transform:
   - {fileID: 623113357}
   - {fileID: 412511499}
   - {fileID: 840410434}
+  - {fileID: 680904343}
   - {fileID: 616439626}
   - {fileID: 674409908}
   - {fileID: 175569773}
-  - {fileID: 680904343}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
