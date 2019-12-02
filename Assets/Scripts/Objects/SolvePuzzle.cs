@@ -265,9 +265,18 @@ public class SolvePuzzle : MonoBehaviour
                             break;
 
                         case "lobbyOne":
-                            gameObject.GetComponent<Door>().locked = false;
-                            solveText.GetComponent<Text>().text = "[\"SPACE\" to open]";
-                            principalUnlocked = true;
+                            if (gameObject.tag == "door")
+                            {
+                                gameObject.GetComponent<Door>().locked = false;
+                                solveText.GetComponent<Text>().text = "[\"SPACE\" to open]";
+                                principalUnlocked = true;
+                            }
+                            else
+                            {
+                                // Do item spawn
+                                GameObject key = GameObject.Instantiate(dropItem, other.gameObject.transform.position, new Quaternion(0, 0, 0, 0));
+                                key.name = dropItemName;
+                            }
                             break;
 
                         default:

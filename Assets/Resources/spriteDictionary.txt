@@ -14,3 +14,4 @@ water:water
 vinegar:vinegar
 baking_soda:baking_soda
 screwdriver:screwdriver
+locker_combo:locker:combo
