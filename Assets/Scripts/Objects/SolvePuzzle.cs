@@ -212,15 +212,25 @@ public class SolvePuzzle : MonoBehaviour
                 // If the puzzle releases a soul, subtract from counter and add time.
                 if (type == "soul")
                 {
+                    Timer.soulsRemaining--;
+                    Timer.currentTime += 3 * 60;
+
+                    // Spawn a soul prefab that has a script attached.
+                    GameObject soul = GameObject.Instantiate(soulModel, new Vector3 (gameObject.transform.position.x, 2, gameObject.transform.position.z), new Quaternion(0, 0, 0, 0));
+
                     // Do specific soul action based on room if necessary.
                     switch (SceneManager.GetActiveScene().name)
                     {
                         case "music":
                             // Drop padlock key.
+                            GameObject key = GameObject.Instantiate(dropItem, soul.transform.position, new Quaternion(0, 0, 0, 0));
+                            key.name = dropItemName;
                             break;
 
                         case "astronomy":
                             // Drop locker combo.
+                            GameObject combo = GameObject.Instantiate(dropItem, soul.transform.position, new Quaternion(0, 0, 0, 0));
+                            combo.name = dropItemName;
                             break;
 
                         case "principals":
@@ -228,15 +238,7 @@ public class SolvePuzzle : MonoBehaviour
                             GameController.gameOverReason = "You saved your sister and escaped the school! Congrats!";
                             SceneManager.LoadScene("principals");
                             break;
-
-                        default:
-                            Timer.soulsRemaining--;
-                            Timer.currentTime += 3 * 60;
-                            break;
                     }
-
-                    // Spawn a soul prefab that has a script attached.
-                    GameObject soul = GameObject.Instantiate(soulModel, new Vector3 (gameObject.transform.position.x, 2, gameObject.transform.position.z), new Quaternion(0, 0, 0, 0));
                 }
 
                 // If the type is item, spawns the item.

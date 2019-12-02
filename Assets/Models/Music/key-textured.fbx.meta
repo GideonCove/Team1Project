@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 6efb625b86fa7864f8a7f11afda55f1b
+guid: 61265c615a2526b4290811c7284a0252
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: key-nrm
+    second: {fileID: 2800000, guid: 14c11928f143b1047902b0f4d1aaf374, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: key-tex
+    second: {fileID: 2800000, guid: 1b35a7a01beaef044989aca2796d02b5, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

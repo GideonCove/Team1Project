@@ -798,7 +798,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &443625065
 MeshRenderer:
@@ -1192,6 +1192,46 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1009885957}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1009885959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 34490b647f7dcd14baf80a61f03ada3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1009885957}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1009885960
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009885959}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.99
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1009885961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009885959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbf5cc3fb43ad249a0fefe2100fff5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotSprite: {fileID: 21300000, guid: 1d07d9db6a573d742a480097e18258c8, type: 3}
+  solveText: {fileID: 1477880326}
+  dropItem: {fileID: 5779704989439615295, guid: e759615127bc40d4293a947b18a9ccf4,
+    type: 3}
+  dropItemName: padlock_key
+  soulModel: {fileID: 6055127336839343717, guid: 46fed458315d8a047b0e1399b0c2b995,
+    type: 3}
+  type: soul
+  secondary: 0
 --- !u!1 &1188738182
 GameObject:
   m_ObjectHideFlags: 0
