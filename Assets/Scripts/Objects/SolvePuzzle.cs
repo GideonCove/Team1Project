@@ -181,7 +181,7 @@ public class SolvePuzzle : MonoBehaviour
                 for (int i = 0; i < itemsNeeded; i++)
                 {
                     // Move the items from the inventoryList to inventoryUsed.
-                    Debug.Log("InventoryList[" + whichListItem[i] + "]");
+                    Debug.Log("InventoryList[" + whichListItem[i] + "]: " + GameController.inventoryList[whichListItem[i]].itemName);
                     GameController.inventoryUsed.Add(GameController.inventoryList[whichListItem[i]]);
                     GameController.inventoryList.RemoveAt(whichListItem[i]);
 

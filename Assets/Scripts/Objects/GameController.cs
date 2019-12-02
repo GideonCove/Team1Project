@@ -54,8 +54,8 @@ public class GameController : MonoBehaviour
         new string[1] {"ocarina"},
         new string[0] { },
         new string[2] {"family_portrait", "school_flag"},
-        new string[3] {"baking_soda", "water", "vinegar"},
-        new string[2] {"pluto", "sun"}
+        new string[2] {"baking_soda", "vinegar" },
+        new string[2] {"pluto", "loose_basketball"}
     };
 
     // Sets up what rooms need which items for more puzzles.
