@@ -31,6 +31,7 @@ public class SolvePuzzle : MonoBehaviour
     private int inventoryListIndex;
     public static bool padlockUnlocked = false;
     public static bool principalUnlocked = false;
+    public static bool planetsSolved = false;
 
     private void Awake()
     {
@@ -243,6 +244,7 @@ public class SolvePuzzle : MonoBehaviour
                             // Drop locker combo.
                             GameObject combo = GameObject.Instantiate(dropItem, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1, gameObject.transform.position.z), new Quaternion(0, 0, 0, 0));
                             combo.name = dropItemName;
+                            planetsSolved = true;
                             break;
 
                         case "principals":

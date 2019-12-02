@@ -12,27 +12,25 @@ using UnityEngine;
 
 public class Orbit : MonoBehaviour
 {
-    public GameObject insideSun;
+    public float orbitSpeed = 30f;
+
+    private GameObject orbitCenter;
+
     void Start()
     {
-        insideSun = GameObject.Find("centerSolarSystem");
+        orbitCenter = GameObject.Find("orbit_center");
     }
-
     
-    // Update is called once per frame
     void Update()
     {
-        orbitAround();
-        spinOnTheAxis();
+        if (SolvePuzzle.planetsSolved)
+        {
+            orbitAround();
+        }
     }
 
     void orbitAround()
     {
-        transform.RotateAround(insideSun.transform.position, new Vector3(0, 0, 1f), 45f * Time.deltaTime);
-    }
-
-    void spinOnTheAxis()
-    {
-        transform.RotateAround(transform.position, new Vector3(0, 1, 0), 500f * Time.deltaTime);
+        transform.RotateAround(orbitCenter.transform.position, new Vector3(0, 1f, 0), orbitSpeed * Time.deltaTime);
     }
 }
