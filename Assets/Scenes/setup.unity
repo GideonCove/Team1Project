@@ -358,7 +358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622a9fd17ffcd384ebb8b460528d8535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugScene: playground
+  debugScene: gym
 --- !u!1 &22607238
 GameObject:
   m_ObjectHideFlags: 0

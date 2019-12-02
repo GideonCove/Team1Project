@@ -261,8 +261,6 @@ MonoBehaviour:
   sensitivityVertical: 10
   optional: 1
   rotationX: 60
-  minVertical: -45
-  maxVertical: 45
 --- !u!81 &183283462
 AudioListener:
   m_ObjectHideFlags: 0
@@ -334,7 +332,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotSprite: {fileID: 21300000, guid: 1d07d9db6a573d742a480097e18258c8, type: 3}
   solveText: {fileID: 1808747752}
-  soulModel: {fileID: 6055127336839343717, guid: 46fed458315d8a047b0e1399b0c2b995,
+  dropItem: {fileID: 0}
+  dropItemName: 
+  soulModel: {fileID: 6576035064934993887, guid: a95f9feb2b3ead744b0a33fa9e64f7a1,
     type: 3}
   type: soul
   secondary: 0
@@ -1403,8 +1403,6 @@ MonoBehaviour:
   sensitivityVertical: 10
   optional: 0
   rotationX: 0
-  minVertical: -45
-  maxVertical: 45
 --- !u!114 &1785612730
 MonoBehaviour:
   m_ObjectHideFlags: 0

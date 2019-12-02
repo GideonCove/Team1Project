@@ -216,7 +216,7 @@ public class SolvePuzzle : MonoBehaviour
                     Timer.currentTime += 3 * 60;
 
                     // Spawn a soul prefab that has a script attached.
-                    GameObject soul = GameObject.Instantiate(soulModel, new Vector3 (gameObject.transform.position.x, 2, gameObject.transform.position.z), new Quaternion(0, 0, 0, 0));
+                    GameObject soul = GameObject.Instantiate(soulModel, new Vector3 (gameObject.transform.position.x, -1, gameObject.transform.position.z), new Quaternion(0, 0, 0, 0));
 
                     // Do specific soul action based on room if necessary.
                     switch (SceneManager.GetActiveScene().name)
