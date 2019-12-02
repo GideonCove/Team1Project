@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 42d77a1c883116c438fe77b859ccf1e8
+guid: 6113b6f638e1b21419658f42dfe488a9
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Flag_Design2
+    second: {fileID: 2800000, guid: 2c209960269c63c4c9d487e6b703074d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_MetalRusted0075_1_M
+    second: {fileID: 2800000, guid: 3bc84550d39eabd4cad9aa906546b2a5, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
