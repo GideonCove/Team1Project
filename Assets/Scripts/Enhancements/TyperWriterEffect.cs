@@ -3,12 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/* 
+ * AUTHOR(S): Gideon
+ * DATE OF CREATION: 12/1/2019
+ * SCENE(S) WHERE USED: math
+ * OBJECT(S) WHERE USED: text
+ * DESCRIPTION: Types out messages on the chalkboard.
+ */
+
 public class TyperWriterEffect : MonoBehaviour
 {
 
     public float delay = 0.1f;
     public string fullText;
     private string currentText = "";
+
     // Start is called before the first frame update
     void Start()
     {

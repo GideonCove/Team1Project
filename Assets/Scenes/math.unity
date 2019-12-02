@@ -1205,7 +1205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.7
-  fullText: Ms. Robison. Welcome to Pre Algebra!.
+  fullText: Ms. Robison. Welcome to Pre Algebra!
 --- !u!114 &745053614
 MonoBehaviour:
   m_ObjectHideFlags: 0
