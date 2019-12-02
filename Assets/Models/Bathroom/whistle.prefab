@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1001830500073366018}
   - component: {fileID: 390295743344295607}
   - component: {fileID: 3955018575656507275}
-  - component: {fileID: 8320301300790246060}
+  - component: {fileID: 391408348756667601}
   m_Layer: 0
   m_Name: whistle
   m_TagString: pickup
@@ -109,8 +109,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 10
   m_CollisionDetection: 0
---- !u!64 &8320301300790246060
-MeshCollider:
+--- !u!65 &391408348756667601
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,7 +119,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -6620976124899674001, guid: 0db16cc4c709a4847a8766bd44fe2104, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 47.8592, y: 22.496252, z: 28.977112}
+  m_Center: {x: -65.162704, y: 0, z: -0.00001907349}
