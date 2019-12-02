@@ -13,12 +13,22 @@ using UnityEngine;
 public class Orbit : MonoBehaviour
 {
     public float orbitSpeed = 30f;
+    public bool isPuzzlePlanet = false;
 
     private GameObject orbitCenter;
 
     void Start()
     {
         orbitCenter = GameObject.Find("orbit_center");
+
+        if (SolvePuzzle.planetsSolved && isPuzzlePlanet)
+        {
+            gameObject.SetActive(true);
+        }
+        else if (!SolvePuzzle.planetsSolved && isPuzzlePlanet)
+        {
+            gameObject.SetActive(false);
+        }
     }
     
     void Update()
