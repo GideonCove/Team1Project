@@ -22,7 +22,7 @@ public class Timer : MonoBehaviour
     private int minutes;
     private int seconds;
 
-    public static int soulsRemaining = 6;
+    public static int soulsRemaining = 7;
 
     void Start()
     {

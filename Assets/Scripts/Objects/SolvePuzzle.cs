@@ -223,7 +223,7 @@ public class SolvePuzzle : MonoBehaviour
                     {
                         case "music":
                             // Drop padlock key.
-                            GameObject key = GameObject.Instantiate(dropItem, soul.transform.position, new Quaternion(0, 0, 0, 0));
+                            GameObject key = GameObject.Instantiate(dropItem, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1, gameObject.transform.position.z), new Quaternion(0, 0, 0, 0));
                             key.name = dropItemName;
                             break;
 
@@ -233,9 +233,15 @@ public class SolvePuzzle : MonoBehaviour
                             MGRCheck.mgrSolved = true;
                             break;
 
+                        case "math":
+                            // Drop pluto.
+                            GameObject pluto = GameObject.Instantiate(dropItem, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1, gameObject.transform.position.z), new Quaternion(0, 0, 0, 0));
+                            pluto.name = dropItemName;
+                            break;
+
                         case "astronomy":
                             // Drop locker combo.
-                            GameObject combo = GameObject.Instantiate(dropItem, soul.transform.position, new Quaternion(0, 0, 0, 0));
+                            GameObject combo = GameObject.Instantiate(dropItem, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1, gameObject.transform.position.z), new Quaternion(0, 0, 0, 0));
                             combo.name = dropItemName;
                             break;
 

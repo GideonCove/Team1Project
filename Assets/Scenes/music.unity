@@ -513,7 +513,7 @@ Transform:
   m_Children:
   - {fileID: 96049650}
   m_Father: {fileID: 1262420292}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &339116638
 GameObject:
@@ -605,7 +605,7 @@ Transform:
   m_Children:
   - {fileID: 360486449}
   m_Father: {fileID: 1262420292}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &360486448
 GameObject:
@@ -874,6 +874,7 @@ Transform:
   m_Children:
   - {fileID: 1188738186}
   - {fileID: 443625062}
+  - {fileID: 1009885958}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1122,7 +1123,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1262420292}
+    m_TransformParent: {fileID: 571364798}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 34490b647f7dcd14baf80a61f03ada3e,
         type: 3}
@@ -1167,7 +1168,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 34490b647f7dcd14baf80a61f03ada3e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 34490b647f7dcd14baf80a61f03ada3e,
         type: 3}
@@ -1228,7 +1229,7 @@ MonoBehaviour:
   dropItem: {fileID: 5779704989439615295, guid: e759615127bc40d4293a947b18a9ccf4,
     type: 3}
   dropItemName: padlock_key
-  soulModel: {fileID: 6055127336839343717, guid: 46fed458315d8a047b0e1399b0c2b995,
+  soulModel: {fileID: 6576035064934993887, guid: a95f9feb2b3ead744b0a33fa9e64f7a1,
     type: 3}
   type: soul
   secondary: 0
@@ -1435,7 +1436,6 @@ Transform:
   - {fileID: 1323644261}
   - {fileID: 987337843}
   - {fileID: 1582877750}
-  - {fileID: 1009885958}
   - {fileID: 339116642}
   - {fileID: 234243788}
   m_Father: {fileID: 0}
@@ -1971,8 +1971,6 @@ MonoBehaviour:
   sensitivityVertical: 10
   optional: 0
   rotationX: 0
-  minVertical: -45
-  maxVertical: 45
 --- !u!114 &2024374469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2113,8 +2111,6 @@ MonoBehaviour:
   sensitivityVertical: 10
   optional: 1
   rotationX: 60
-  minVertical: -45
-  maxVertical: 45
 --- !u!81 &2128525000
 AudioListener:
   m_ObjectHideFlags: 0
