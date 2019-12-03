@@ -17,6 +17,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: blinn4
+    second: {fileID: 2100000, guid: 0cb078844d13b9a46b38448649f902bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn5
+    second: {fileID: 2100000, guid: b3b747a5eb927ec4ba0b6bfe7b5a0c9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: lambert1
     second: {fileID: 2100000, guid: 43a65ed016334cc4189cdd702766abd8, type: 2}
   - first:
@@ -32,13 +42,43 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: lambert6
+    second: {fileID: 2100000, guid: bd90467c2ea64d74db8f273363077cf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert7
+    second: {fileID: 2100000, guid: e82579a081bccd54180a5d9f954df3ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert8
+    second: {fileID: 2100000, guid: e7cdbab49ca8e0f45b49625d7a8f232b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: padlock-metal1
     second: {fileID: 2100000, guid: af88421fa20ce8643af5ba734003a733, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: padlock-metal2
+    second: {fileID: 2100000, guid: 817a6f5d5633ce74587125d665e40aaa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: padlock1
     second: {fileID: 2100000, guid: 08247720f5d20a44ab3e66463e0d68a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: padlock3
+    second: {fileID: 2100000, guid: 531e53c3d5cbc81468506622e81d6765, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong10
+    second: {fileID: 2100000, guid: fc01ffd70386d4949abb002e07c440c0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -62,6 +102,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: phong7
+    second: {fileID: 2100000, guid: d0cdd5d1a9aaea44a814a80073ce3ba5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong8
+    second: {fileID: 2100000, guid: b19c9a0f901d993489ef4be6aaf7ffb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong9
+    second: {fileID: 2100000, guid: d002b52ad8085704e9e2509aaa90e862, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: phongE1
     second: {fileID: 2100000, guid: 30e37602517956e4899999c54f85875f, type: 2}
   - first:
@@ -70,30 +125,40 @@ ModelImporter:
       name: phongE3
     second: {fileID: 2100000, guid: 19b0bf17be14f044bbd7106200cce69b, type: 2}
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phongE4
+    second: {fileID: 2100000, guid: 557011d6f6b70cd42b71bed630613e49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phongE5
+    second: {fileID: 2100000, guid: 51d9b1331c811ef4aac9947cfb94e6b3, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TexturesCom_AsphaltDamaged0057_1_seamless_S
-    second: {fileID: 2800000, guid: c3e239df48e6dff4a926e31e6e487d94, type: 3}
+    second: {fileID: 2800000, guid: 9e53c80d31acd064f87cf1fb3dcaad99, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TexturesCom_ConcreteBare0428_4_seamless_S
-    second: {fileID: 2800000, guid: 9dbc53372abab5e4984cb1cd893cb9f8, type: 3}
+    second: {fileID: 2800000, guid: 87d2386880a7fc04e81f6602541bc72f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TexturesCom_Grass0169_1_seamless_S
-    second: {fileID: 2800000, guid: be6955dbec87cdc46a94849827cc637b, type: 3}
+    second: {fileID: 2800000, guid: ce69526ffbaccb44dac265ef2cbbc7dd, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TexturesCom_Metal_AluminumBrushed_512_albedo
-    second: {fileID: 2800000, guid: eb0b9c1f647aac5479f58579267f16cd, type: 3}
+    second: {fileID: 2800000, guid: 0fb9942a125d3cf4a8afdfdb4916fdf1, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TexturesCom_Metal_AluminumBrushed_512_roughness
-    second: {fileID: 2800000, guid: 9fdb7d12bc1c5324882d991093fd11e4, type: 3}
+    second: {fileID: 2800000, guid: 2e019a054bc9b4b46a3c2bafa00e96e1, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
@@ -102,58 +167,63 @@ ModelImporter:
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
+      name: TexturesCom_Metal_WireFence__LightRust_1K_albedo.tif
+    second: {fileID: 2800000, guid: 4bdebdb73163a3943a6f78a6a700dcf4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
       name: TexturesCom_Metal_WireFence__LightRust_1K_alpha
-    second: {fileID: 2800000, guid: 165d7406f75bc254b8b48463040ed121, type: 3}
+    second: {fileID: 2800000, guid: 34fa000d2df7fdb44b18c52e525c0a09, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TexturesCom_Metal_WireFence__LightRust_1K_normal
-    second: {fileID: 2800000, guid: 3fe19331c21b3504c96bc7eaf69d0363, type: 3}
+    second: {fileID: 2800000, guid: 8308fc627846998419a7158b3a3a4de3, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TexturesCom_Wood_Worn2_1K_albedo
-    second: {fileID: 2800000, guid: d928f7da4eb520d468106b5100a6d4a8, type: 3}
+    second: {fileID: 2800000, guid: 6093d706cd4508e4591cb11838a69531, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: door-window
-    second: {fileID: 2800000, guid: 4dc515c9978657547904baac4cd97157, type: 3}
+    second: {fileID: 2800000, guid: c0ac42a980da7ca41aace66385982af1, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: padlock-nrm
-    second: {fileID: 2800000, guid: aecbf17e00d34c1409c4cd293732ba4a, type: 3}
+    second: {fileID: 2800000, guid: cca9fafa5b81da64d9c8f198b365df9f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: padlock-tex
-    second: {fileID: 2800000, guid: 9fae3825d8409f84f99db0dec868a1ca, type: 3}
+    second: {fileID: 2800000, guid: 3023811812f483a42a110d667b5ad1e8, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: rust-nrm
-    second: {fileID: 2800000, guid: 9adcc3a49b79a33488142ceb57c2f874, type: 3}
+    second: {fileID: 2800000, guid: 79a931eb121b8ae48b3a1369ba36d3ed, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: rusted-metal
-    second: {fileID: 2800000, guid: a16b048038b21074e9e8665e67ae17ee, type: 3}
+    second: {fileID: 2800000, guid: e9cbe7ee37b29b84e8f9331c982bfaa1, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: school-exterior-nrm
-    second: {fileID: 2800000, guid: 54e6b3812e5423e4eb8bce7eb6c01599, type: 3}
+    second: {fileID: 2800000, guid: 3b3feca5b7cec064f85eb5d0d350d035, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: school-exterior-texture
-    second: {fileID: 2800000, guid: 40e377d4339be4a44b2004017f3a98bb, type: 3}
+    second: {fileID: 2800000, guid: 1ee34da2c7709f04fb0563ae91aa7d63, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: school-window
-    second: {fileID: 2800000, guid: de3287957132a6947842097928691b07, type: 3}
+    second: {fileID: 2800000, guid: 9ee8107fdd7fd0044bb52ce10c7a5eb3, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
