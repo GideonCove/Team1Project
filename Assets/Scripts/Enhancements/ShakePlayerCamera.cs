@@ -66,9 +66,13 @@ public class ShakePlayerCamera : MonoBehaviour
 
 
             if (smooth)
+            {
                 transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(rotationAmount), Time.deltaTime * smoothPower);
+            }
             else
+            {
                 transform.localRotation = Quaternion.Euler(rotationAmount);
+            }
 
             yield return null;
         }
