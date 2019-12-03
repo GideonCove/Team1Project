@@ -16,14 +16,18 @@ public class SwingObject : MonoBehaviour
     public float speed = 2.0f;
     public float direction = 1;
     private Quaternion startPos;
+
     void Start()
     {
         startPos = transform.rotation;
     }
+
     void Update()
     {
         Quaternion a = startPos;
         a.z += direction * (delta * Mathf.Sin(Time.time * speed));
+        a.x = startPos.x;
+        a.y = startPos.y;
         transform.rotation = a;
     }
 }
