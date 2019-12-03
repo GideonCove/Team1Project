@@ -6,12 +6,9 @@ using UnityEngine;
  * AUTHOR(S): Anthony
  * DATE OF CREATION: 11/26/2019
  * SCENE(S) WHERE USED: lobbyTwo
- * OBJECT(S) WHERE USED: familyPortrait
- * DESCRIPTION: Shakes the player camera when they click on the familyPortrait object
+ * OBJECT(S) WHERE USED: family_portrait
+ * DESCRIPTION: Shakes the player camera when they click on the familyPortrait object.
  */
-
-
-
 
 public class ShakePlayerCamera : MonoBehaviour
 {
@@ -21,14 +18,10 @@ public class ShakePlayerCamera : MonoBehaviour
     float shakePercentage;
     float InitialAmount;
     float startDuration;
-    bool ShouldShake = false; 
-    bool smooth;
+    bool ShouldShake = false;
+    bool smooth = false;
     float smoothPower = 10f;
-
-    void Start()
-    {
-    }
-
+    
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -36,7 +29,6 @@ public class ShakePlayerCamera : MonoBehaviour
             ShakeCamera();
         }
     }
-
 
     void ShakeCamera()
     {
@@ -57,7 +49,6 @@ public class ShakePlayerCamera : MonoBehaviour
 
         if (!ShouldShake) StartCoroutine(Shake());
     }
-
 
     IEnumerator Shake()
     {
@@ -81,6 +72,7 @@ public class ShakePlayerCamera : MonoBehaviour
 
             yield return null;
         }
+
         transform.localRotation = Quaternion.identity;
         shakePower = 2;
         shakeDuration = 2;
