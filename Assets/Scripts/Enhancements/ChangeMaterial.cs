@@ -2,49 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
- // * AUTHOR(S): Anthony
-// * DATE OF CREATION: 2/1/2019
-// * SCENE(S) WHERE USED: Bathroom
-// * OBJECT(S) WHERE USED: Bathroom_stall
-// * DESCRIPTION: changes material of the oject
- 
-
+/* 
+* AUTHOR(S): Anthony
+* DATE OF CREATION: 12/2/2019
+* SCENE(S) WHERE USED: bathroom
+* OBJECT(S) WHERE USED: bathroom_stall
+* DESCRIPTION: Changes the material of the object to show different colors.
+*/
 
 public class ChangeMaterial : MonoBehaviour
 {
-    public Material greenMaterial;
-    public Material blueMaterial;
-
+    public Material materialOne;
+    public Material materialTwo;
+    public float switchSpeed = 1.0f;;
 
     void Start()
     {
-
-
-
-        Invoke("m1", 1.0f);
-
+        Invoke("m1", 0f);
     }
 
     void m1()
     {
-
-        GetComponent<Renderer>().material = greenMaterial;
-        Invoke("m2", 1.0f);
-
+        if (GetComponent<Renderer>() != null)
+        {
+            GetComponent<Renderer>().material = materialOne;
+            Invoke("m2", switchSpeed);
+        }
     }
 
     void m2()
     {
-
-        GetComponent<Renderer>().material = blueMaterial;
-        Invoke("m1", 1.0f);
-
-    }
-
-
-    void Update()
-    {
-        
+        if (GetComponent<Renderer>() != null)
+        {
+            GetComponent<Renderer>().material = materialTwo;
+            Invoke("m1", switchSpeed);
+        }
     }
 }
