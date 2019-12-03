@@ -7,13 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
+      name: 69983762-seamless-texture-starry-sky
+    second: {fileID: 2800000, guid: 85159fff11706fe4c8a1296118e0d8ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
       name: black-ice-texture-foss-residential-carpet-tiles-7hdqn0916pkh-64_1000
-    second: {fileID: 2800000, guid: 9728b46d74911fa46a8266ab47a367f8, type: 3}
+    second: {fileID: 2800000, guid: af0ff381e58912e42927e90db82bba6a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: wood
-    second: {fileID: 2800000, guid: 78757317288c1e4449a629e441426596, type: 3}
+    second: {fileID: 2800000, guid: d3df22e07563d994dbf343119ba6eed5, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
