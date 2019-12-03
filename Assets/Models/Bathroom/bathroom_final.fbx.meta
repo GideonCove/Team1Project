@@ -3,7 +3,32 @@ guid: fea2ed0a1ffe7c942a928f2ce16661e8
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Metal_AluminumBrushed_512_albedo
+    second: {fileID: 2800000, guid: f0810d6c44ef6774a8a7f5b5b5bb60d4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Metal_AluminumBrushed_512_roughness
+    second: {fileID: 2800000, guid: ceab3b951dca04d489748c0c85e5f893, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Wall_ConcreteBunker3_4x4_A_1K_albedo
+    second: {fileID: 2800000, guid: 03d5464e4f3abbf4db3c058315f8b618, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Wood_Worn2_1K_albedo
+    second: {fileID: 2800000, guid: eae1a8034330b074eb345c46ccee12e4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: door-window
+    second: {fileID: 2800000, guid: fce2fdc97e446d4448ec2debcefcffaa, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
