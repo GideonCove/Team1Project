@@ -14,7 +14,7 @@ public class ChangeMaterial : MonoBehaviour
 {
     public Material materialOne;
     public Material materialTwo;
-    public float switchSpeed = 1.0f;;
+    public float switchSpeed = 1.0f;
 
     void Start()
     {
