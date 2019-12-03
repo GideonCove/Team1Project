@@ -19,7 +19,6 @@ public class Orbit : MonoBehaviour
 
     void Start()
     {
-        SolvePuzzle.planetsSolved = true;
         orbitCenter = GameObject.Find("orbit_center");
 
         if (SolvePuzzle.planetsSolved && isPuzzlePlanet)
