@@ -12,19 +12,24 @@ using UnityEngine;
 
 public class ShakePlayerCamera : MonoBehaviour
 {
-
-    float shakePower = 5;
-    float shakeDuration = 1;
+    float shakePower = 2;
+    float shakeDuration = 0.2f;
     float shakePercentage;
     float InitialAmount;
     float startDuration;
     bool ShouldShake = false;
-    bool smooth = false;
+    bool smooth = true;
     float smoothPower = 10f;
-    
-    private void Update()
+    GameObject playerCamera;
+
+    private void Start()
     {
-        if (Input.GetMouseButtonDown(0))
+        playerCamera = GameObject.Find("player_camera");
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (Input.GetKeyDown(KeyCode.E))
         {
             ShakeCamera();
         }
@@ -32,7 +37,6 @@ public class ShakePlayerCamera : MonoBehaviour
 
     void ShakeCamera()
     {
-
         InitialAmount = shakePower;
         startDuration = shakeDuration;
 
@@ -41,7 +45,6 @@ public class ShakePlayerCamera : MonoBehaviour
 
     public void ShakeCamera(float amount, float duration)
     {
-
         shakePower += amount;
         InitialAmount = shakePower;
         shakeDuration += duration;
@@ -67,20 +70,21 @@ public class ShakePlayerCamera : MonoBehaviour
 
             if (smooth)
             {
-                transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(rotationAmount), Time.deltaTime * smoothPower);
+                playerCamera.transform.localRotation = Quaternion.Lerp(playerCamera.transform.localRotation, Quaternion.Euler(rotationAmount), Time.deltaTime * smoothPower);
             }
             else
             {
-                transform.localRotation = Quaternion.Euler(rotationAmount);
+                playerCamera.transform.localRotation = Quaternion.Euler(rotationAmount);
             }
 
             yield return null;
         }
 
-        transform.localRotation = Quaternion.identity;
+        Destroy(GetComponent<ShakePlayerCamera>());
+
+        playerCamera.transform.localRotation = Quaternion.identity;
         shakePower = 2;
         shakeDuration = 2;
         ShouldShake = false;
     }
-
 }
