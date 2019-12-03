@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /* 
- * AUTHOR(S): Gideon, Mary
+ * AUTHOR(S): Mary, Gideon
  * DATE OF CREATION: 11/26/2019
  * SCENE(S) WHERE USED: astronomy
  * OBJECT(S) WHERE USED: planets
@@ -12,10 +12,10 @@ using UnityEngine;
 
 public class Orbit : MonoBehaviour
 {
-    public float orbitSpeed = 30f;
+    public float orbitSpeed = 30f; // sets the speed for the planet orbit.
     public bool isPuzzlePlanet = false;
 
-    private GameObject orbitCenter;
+    private GameObject orbitCenter; // makes it so the planets orbit around this point.
 
     void Start()
     {
@@ -23,11 +23,11 @@ public class Orbit : MonoBehaviour
 
         if (SolvePuzzle.planetsSolved && isPuzzlePlanet)
         {
-            gameObject.SetActive(true);
+            gameObject.SetActive(true); // makes the planet visible so that people can see it orbit.
         }
         else if (!SolvePuzzle.planetsSolved && isPuzzlePlanet)
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(false); 
         }
     }
     
@@ -35,12 +35,12 @@ public class Orbit : MonoBehaviour
     {
         if (SolvePuzzle.planetsSolved)
         {
-            orbitAround();
+            orbitAround(); // makes the planets rotate constantly.
         }
     }
 
     void orbitAround()
     {
-        transform.RotateAround(orbitCenter.transform.position, new Vector3(0, 1f, 0), orbitSpeed * Time.deltaTime);
+        transform.RotateAround(orbitCenter.transform.position, new Vector3(0, 1f, 0), orbitSpeed * Time.deltaTime); //the actual orbit code. This makes the planet rotate.
     }
 }
