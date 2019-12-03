@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: d5faa2e3198fb94429b7fcd17d3634f5
+guid: 5b8ec80d71d8f384ea395c3f0d33e075
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_DamagedRubber_0.5x0.5_512_normal
+    second: {fileID: 2800000, guid: efad62ac9b3f21b418b2ad875b07840e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Metal_AluminumBrushed_512_albedo
+    second: {fileID: 2800000, guid: f67c7c23d93201c459832fdace3992dd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rubber_painted
+    second: {fileID: 2800000, guid: 20fa49d6b27ff824199811d84de6335f, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
