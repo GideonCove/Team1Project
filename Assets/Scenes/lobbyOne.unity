@@ -5185,9 +5185,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorText: {fileID: 237637363}
   nextLevel: music
-  destinationX: 7.94
+  destinationX: 8.73
   destinationY: 1
-  destinationZ: -3.39
+  destinationZ: -1.74
   destinationDirection: east
   locked: 0
 --- !u!65 &1490106962

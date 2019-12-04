@@ -3,7 +3,17 @@ guid: 93758855ef0fc2b42ac6c66dd75d21c2
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Wall_ConcreteBunker3_4x4_A_1K_albedo
+    second: {fileID: 2800000, guid: 2b1318c5ddc660641908144a5da4ce72, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2800000, guid: 8e0b9f053ee659e409d799e388bbc8b5, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
