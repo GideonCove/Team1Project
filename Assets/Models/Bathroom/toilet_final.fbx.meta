@@ -3,7 +3,12 @@ guid: c5840e5133a64a74a940152a46ad98b9
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Fiberglass0014_M
+    second: {fileID: 2800000, guid: dc1917b7060213c4094c1662317c653e, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
