@@ -32,6 +32,7 @@ public class SolvePuzzle : MonoBehaviour
     public static bool padlockUnlocked = false;
     public static bool principalUnlocked = false;
     public static bool planetsSolved = false;
+    private bool alreadySolved = false;
 
     private void Start()
     {
@@ -42,11 +43,122 @@ public class SolvePuzzle : MonoBehaviour
             gameObject.GetComponent<Door>().locked = false;
             Destroy(gameObject.GetComponent<SolvePuzzle>());
         }
+
+        // Gets active scene name and sets appropriate number based on it.
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "bathroom":
+                roomNumber = 1;
+                break;
+
+            case "playground":
+                roomNumber = 2;
+                break;
+
+            case "math":
+                roomNumber = 3;
+                break;
+
+            case "gym":
+                roomNumber = 4;
+                break;
+
+            case "lobbyOne":
+                roomNumber = 5;
+                break;
+
+            case "music":
+                roomNumber = 6;
+                break;
+
+            case "lobbyTwo":
+                roomNumber = 7;
+                break;
+
+            case "principals":
+                roomNumber = 8;
+                break;
+
+            case "science":
+                roomNumber = 9;
+                break;
+
+            case "astronomy":
+                roomNumber = 10;
+                break;
+        }
+
+        gameController = GameObject.Find("game_controller").GetComponent<GameController>();
+
+        if (!secondary)
+        {
+            itemsNeeded = gameController.roomNeedsPrimary[roomNumber - 1].Length;
+
+            whichListItem[0] = 0;
+            whichListItem[1] = 0;
+            whichListItemIndex = 0;
+            inventoryListIndex = 0;
+            itemsFound = 0;
+
+            foreach (string nameOfIt in gameController.roomNeedsPrimary[roomNumber - 1])
+            {
+                inventoryListIndex = 0;
+
+                foreach (Item anItem in GameController.inventoryUsed)
+                {
+                    if (anItem.itemName == nameOfIt)
+                    {
+                        Debug.Log("Found and matched item \"" + anItem.itemName + "\" in inventory at: " + inventoryListIndex);
+                        whichListItem[whichListItemIndex] = inventoryListIndex;
+                        whichListItemIndex++;
+                        itemsFound++;
+                        break;
+                    }
+
+                    inventoryListIndex++;
+                }
+            }
+        }
+
+        if (secondary)
+        {
+            itemsNeeded = gameController.roomNeedsSecondary[roomNumber - 1].Length;
+
+            whichListItem[0] = 0;
+            whichListItem[1] = 0;
+            whichListItemIndex = 0;
+            inventoryListIndex = 0;
+            itemsFound = 0;
+
+            foreach (string nameOfIt in gameController.roomNeedsSecondary[roomNumber - 1])
+            {
+                inventoryListIndex = 0;
+
+                foreach (Item anItem in GameController.inventoryUsed)
+                {
+                    if (anItem.itemName == nameOfIt)
+                    {
+                        Debug.Log("Found and matched item \"" + anItem.itemName + "\" in inventory at: " + inventoryListIndex);
+                        whichListItem[whichListItemIndex] = inventoryListIndex;
+                        whichListItemIndex++;
+                        itemsFound++;
+                        break;
+                    }
+
+                    inventoryListIndex++;
+                }
+            }
+        }
+
+        if (itemsFound == itemsNeeded)
+        {
+            Debug.Log("Already solved");
+            alreadySolved = true;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-
         if (((SceneManager.GetActiveScene().name == "lobbyOne" && !principalUnlocked) || (SceneManager.GetActiveScene().name == "playground" && !padlockUnlocked)) && gameObject.tag == "door")
         {
             solveText.GetComponent<Text>().text = "[\"SPACE\" to unlock]";
@@ -55,60 +167,23 @@ public class SolvePuzzle : MonoBehaviour
         {
             solveText.GetComponent<Text>().text = "[\"SPACE\" to interact]";
         }
+
+        if (alreadySolved)
+        {
+            solveText.SetActive(false);
+            Destroy(gameObject.GetComponent<SolvePuzzle>());
+        }
     }
 
     public void OnTriggerStay(Collider other)
     {
-        solveText.SetActive(true);
+        if (!alreadySolved)
+        {
+            solveText.SetActive(true);
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            gameController = GameObject.Find("game_controller").GetComponent<GameController>();
-
-            // Gets active scene name and sets appropriate number based on it.
-            switch (SceneManager.GetActiveScene().name)
-            {
-                case "bathroom":
-                    roomNumber = 1;
-                    break;
-
-                case "playground":
-                    roomNumber = 2;
-                    break;
-
-                case "math":
-                    roomNumber = 3;
-                    break;
-
-                case "gym":
-                    roomNumber = 4;
-                    break;
-
-                case "lobbyOne":
-                    roomNumber = 5;
-                    break;
-
-                case "music":
-                    roomNumber = 6;
-                    break;
-
-                case "lobbyTwo":
-                    roomNumber = 7;
-                    break;
-
-                case "principals":
-                    roomNumber = 8;
-                    break;
-
-                case "science":
-                    roomNumber = 9;
-                    break;
-
-                case "astronomy":
-                    roomNumber = 10;
-                    break;
-            }
-
             if (!secondary)
             {
                 itemsNeeded = gameController.roomNeedsPrimary[roomNumber - 1].Length;
@@ -211,8 +286,6 @@ public class SolvePuzzle : MonoBehaviour
                         anObject.GetComponent<Image>().sprite = mySprite;
                         slotNumber++;
                     }
-
-                    Destroy(gameObject.GetComponent<SolvePuzzle>());
                 }
 
                 Debug.Log("Post-Removal InventoryList Count: " + GameController.inventoryList.Count);
@@ -295,8 +368,9 @@ public class SolvePuzzle : MonoBehaviour
                             break;
                     }
                 }
-                
+
                 solveText.SetActive(false);
+                Destroy(gameObject.GetComponent<SolvePuzzle>());
             }
         }
     }
