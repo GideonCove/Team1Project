@@ -3,7 +3,12 @@ guid: 00220b550bfd90f479122d65b8bec52b
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_MetalBare0019_S
+    second: {fileID: 2800000, guid: 444bdf9a94e1cb74cbd683e27dde9de2, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

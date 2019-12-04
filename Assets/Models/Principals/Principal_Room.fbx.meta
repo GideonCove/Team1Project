@@ -3,7 +3,27 @@ guid: c69ee75822ea5d04aa7bec535da8ebd8
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Carpet0034_2_M
+    second: {fileID: 2800000, guid: f15821d58d57ff041a9b3e93ead0a1e0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_ConcreteNew0066_1_M
+    second: {fileID: 2800000, guid: 9fe9d756dc590384194817c697dc18a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_PlywoodOld0067_M
+    second: {fileID: 2800000, guid: feffe0207af244944997d662f72c76a8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_WoodFine0003_seamless_S
+    second: {fileID: 2800000, guid: 1d90fd8ff7c73fe44bc33f2708ebb429, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

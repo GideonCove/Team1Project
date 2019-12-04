@@ -1,24 +1,9 @@
 fileFormatVersion: 2
-guid: bb5f10211e4cdde4a8e96534deb1334c
+guid: ff98cf295a35c8041b352e1faae2b1dd
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: TexturesCom_MetalBare0051_M
-    second: {fileID: 2800000, guid: e1e151cf67c868b4fb8cc14a8e51a56e, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: TexturesCom_WoodFine0061_11_M
-    second: {fileID: 2800000, guid: a2f6466373d887745a2f2a3418b273df, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: gold_crazy
-    second: {fileID: 2800000, guid: 6a9ae4f10582e8f4d81fc9e195eea1b8, type: 3}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

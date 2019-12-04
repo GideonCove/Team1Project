@@ -14,8 +14,6 @@ public class PrincipalsItem : MonoBehaviour
 {
     void Start()
     {
-        PrincipalScene.played = true;
-
         if (PrincipalScene.played)
         {
             gameObject.SetActive(true);
