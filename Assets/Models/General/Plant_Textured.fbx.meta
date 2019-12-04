@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 9829cdefa24006e439efca43c7df5452
+guid: 6ba2bdd4a6a6f624bbebc22806d281e5
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: TexturesCom_Leather_Plain09_008x008_2K_albedo
-    second: {fileID: 2800000, guid: f88bad2cd8e32204b8fe211eb536c8b0, type: 3}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
