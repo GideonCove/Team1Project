@@ -38,10 +38,9 @@ public class SolvePuzzle : MonoBehaviour
     {
         solveText.SetActive(false);
 
-        if ((principalUnlocked && SceneManager.GetActiveScene().name == "lobbyOne") || (padlockUnlocked && SceneManager.GetActiveScene().name == "playground"))
+        if (((SceneManager.GetActiveScene().name == "lobbyOne" && principalUnlocked) || (SceneManager.GetActiveScene().name == "playground" && padlockUnlocked)) && gameObject.tag == "door")
         {
             gameObject.GetComponent<Door>().locked = false;
-            Destroy(gameObject.GetComponent<SolvePuzzle>());
         }
 
         // Gets active scene name and sets appropriate number based on it.
@@ -188,8 +187,12 @@ public class SolvePuzzle : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+
+            gameController = GameObject.Find("game_controller").GetComponent<GameController>();
+
             if (!secondary)
             {
+                Debug.Log(gameController.roomNeedsPrimary[roomNumber - 1].Length);
                 itemsNeeded = gameController.roomNeedsPrimary[roomNumber - 1].Length;
                 Debug.Log("[SolvePuzzle] Items needed: " + itemsNeeded);
 

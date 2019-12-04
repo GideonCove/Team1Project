@@ -36,6 +36,13 @@ public class Orbit : MonoBehaviour
         if (SolvePuzzle.planetsSolved)
         {
             orbitAround(); // makes the planets rotate constantly.
+
+            Debug.Log(gameObject.name + " is puzzle planet: " + isPuzzlePlanet);
+            if (isPuzzlePlanet)
+            {
+                gameObject.SetActive(true);
+                Debug.Log(gameObject.name + " is now active");
+            }
         }
     }
 
