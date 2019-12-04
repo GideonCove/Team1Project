@@ -90,6 +90,7 @@ public class SolvePuzzle : MonoBehaviour
 
         gameController = GameObject.Find("game_controller").GetComponent<GameController>();
 
+        // Check if already solved.
         if (!secondary)
         {
             itemsNeeded = gameController.roomNeedsPrimary[roomNumber - 1].Length;
@@ -120,6 +121,7 @@ public class SolvePuzzle : MonoBehaviour
             }
         }
 
+        // Also checks if already solved.
         if (secondary)
         {
             itemsNeeded = gameController.roomNeedsSecondary[roomNumber - 1].Length;
@@ -150,9 +152,10 @@ public class SolvePuzzle : MonoBehaviour
             }
         }
 
+        // If already solved, set the bool to true.
         if (itemsFound == itemsNeeded)
         {
-            Debug.Log("Already solved");
+            Debug.Log("Already solved!");
             alreadySolved = true;
         }
     }
@@ -168,6 +171,7 @@ public class SolvePuzzle : MonoBehaviour
             solveText.GetComponent<Text>().text = "[\"SPACE\" to interact]";
         }
 
+        // If already solved, destroy the component.
         if (alreadySolved)
         {
             solveText.SetActive(false);
