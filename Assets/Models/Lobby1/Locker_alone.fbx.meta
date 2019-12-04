@@ -3,7 +3,17 @@ guid: cebec39b2051ba644844cdb7c9e01ba4
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_MetalPainted0189_1_M
+    second: {fileID: 2800000, guid: 381680ef9e91bf242bc354bf87fa742a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: silver_rusted_chair_metal
+    second: {fileID: 2800000, guid: a1f423fbe2ea8a948a6fb2ddcfef6d27, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

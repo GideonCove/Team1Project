@@ -28,7 +28,7 @@ public class Intro : MonoBehaviour
     public string lineBottom = "";
     public float lengthOfFadeInBottom = 1f;
 
-    private static bool played = false;
+    private static bool played = true;
 
     private void Start()
     {

@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: lined_paper
-    second: {fileID: 2800000, guid: 132142f875c0c98488b690f1e34a5b8e, type: 3}
+    second: {fileID: 2800000, guid: 6902ceea5d5e95c488ad18fb9fef0eea, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

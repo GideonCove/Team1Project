@@ -3,7 +3,27 @@ guid: 0e6eb6a3ab42ee54ea8321c0ee1807d8
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn4
+    second: {fileID: 2100000, guid: d7233dd192e453049a0713049918a18d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: 8c84b772f88c4a74c895925c6e26e798, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Rubber0027_1_M
+    second: {fileID: 2800000, guid: 8a560292cf30ab94d8191b3bf5681893, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Wood_OakVeneer2_4K_albedo
+    second: {fileID: 2800000, guid: b33c72f4d65060a4cb1649183de19c3c, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

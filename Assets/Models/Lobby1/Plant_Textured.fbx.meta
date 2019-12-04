@@ -3,7 +3,17 @@ guid: eb001ac6be09fca4f8ba861378624cc8
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_MetalBare0115_2_M
+    second: {fileID: 2800000, guid: b81999011cb13af4cb9a6d29d98d9e64, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_SoilRough0069_2_M
+    second: {fileID: 2800000, guid: ffd8ab6ad5b34ef4188ee29978e44a84, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
