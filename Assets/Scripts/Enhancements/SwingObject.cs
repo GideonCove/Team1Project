@@ -12,6 +12,7 @@ using UnityEngine;
 
 public class SwingObject : MonoBehaviour
 {
+    public GameObject origin;
     public float delta = 1.5f;
     public float speed = 2.0f;
     public float direction = 1;
