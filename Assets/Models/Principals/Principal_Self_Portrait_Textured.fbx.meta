@@ -3,7 +3,17 @@ guid: ff98cf295a35c8041b352e1faae2b1dd
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_MetalBare0201_9_M
+    second: {fileID: 2800000, guid: 5d1585b97178d294c8e2b89dd50349f4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: self_portrait
+    second: {fileID: 2800000, guid: 4bcd6217b18fb7948bc903f06c70d119, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
