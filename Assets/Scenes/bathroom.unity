@@ -2493,8 +2493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotSprite: {fileID: 21300000, guid: 1d07d9db6a573d742a480097e18258c8, type: 3}
   solveText: {fileID: 176169133}
-  dropItem: {fileID: 1575100454425351902, guid: 03f9fb52fa7c139458bd169b1ab80cd6,
-    type: 3}
+  dropItem: {fileID: 202392779997601431, guid: c14671fc0f87ae24e95787db4b5c5f5b, type: 3}
   dropItemName: whistle
   soulModel: {fileID: 0}
   type: item
@@ -6972,7 +6971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotSprite: {fileID: 21300000, guid: 1d07d9db6a573d742a480097e18258c8, type: 3}
   solveText: {fileID: 176169133}
-  dropItem: {fileID: 7870737217268621945, guid: 1e93c7ff51e4f9e409f71952267889c4,
+  dropItem: {fileID: 6397306863377819594, guid: d6ee6f197f0eaa44aa9183a6d38beedb,
     type: 3}
   dropItemName: ocarina
   soulModel: {fileID: 0}
