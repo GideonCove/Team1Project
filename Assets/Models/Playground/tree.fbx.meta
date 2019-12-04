@@ -8,6 +8,16 @@ ModelImporter:
     second: Take 001
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tree_lambert4
+    second: {fileID: 2100000, guid: cd5d3cdab19a75148873d31fa0934c10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tree_lambert5
+    second: {fileID: 2100000, guid: d48b37e2f5f17724f88c96b1ca8da731, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TexturesCom_TreeBark5_1K_albedo
