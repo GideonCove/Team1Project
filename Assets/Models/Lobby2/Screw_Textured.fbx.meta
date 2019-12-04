@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TexturesCom_MetalRusted0132_1_M
-    second: {fileID: 2800000, guid: 2a2dfa3601fbd104f83ca53aa7043e52, type: 3}
+    second: {fileID: 2800000, guid: 0171dbb3d62a5314ab68924792341d25, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

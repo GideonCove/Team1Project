@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TexturesCom_MetalLeaking0093_M
-    second: {fileID: 2800000, guid: 1cc8d0de72a086b4a8a46f1e14b7c7fc, type: 3}
+    second: {fileID: 2800000, guid: 881a329b7456256428a10c50124b7604, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: silver_rusted_chair_metal
-    second: {fileID: 2800000, guid: 3d2fb1b8c3f1c544fb6172a5821240c3, type: 3}
+    second: {fileID: 2800000, guid: bcf9481096c1c184d907b954bca4aa03, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
