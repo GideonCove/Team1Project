@@ -5884,6 +5884,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: notebook
       objectReference: {fileID: 0}
+    - target: {fileID: 4538349555224333541, guid: 75cca9c64962e684aa6f9f05e09f2bcc,
+        type: 3}
+      propertyPath: m_TagString
+      value: pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 1455696693883907566, guid: 75cca9c64962e684aa6f9f05e09f2bcc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5956,6 +5961,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75cca9c64962e684aa6f9f05e09f2bcc, type: 3}
+--- !u!1 &3117337030734685844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4538349555224333541, guid: 75cca9c64962e684aa6f9f05e09f2bcc,
+    type: 3}
+  m_PrefabInstance: {fileID: 3117337030734685843}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &3117337030734685845
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3117337030734685844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &6327338587822714574 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5252365436293024490, guid: aed6606a29f963e43a1738cee880d029,

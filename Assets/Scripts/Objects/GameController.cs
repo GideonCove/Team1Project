@@ -105,6 +105,10 @@ public class GameController : MonoBehaviour
         theItems.Add(new Item(14, "baking_soda", true));
         theItems.Add(new Item(15, "screwdriver", true));
         theItems.Add(new Item(16, "locker_combo", true));
+        theItems.Add(new Item(17, "open_notebook", true));
+        theItems.Add(new Item(18, "pencil", true));
+        theItems.Add(new Item(19, "notebook", true));
+        theItems.Add(new Item(20, "papers", true));
 
         foreach (Item anItem in theItems)
         {

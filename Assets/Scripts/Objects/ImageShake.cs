@@ -36,6 +36,9 @@ public class ImageShake : MonoBehaviour
 
         Cursor.visible = true;
 
+        PlayerController.destinationX = 0;
+        PlayerController.destinationY = 0;
+
         originX = image.transform.localPosition.x;
         originY = image.transform.localPosition.y;
 

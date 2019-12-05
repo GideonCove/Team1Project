@@ -302,7 +302,7 @@ public class SolvePuzzle : MonoBehaviour
                 if (type == "soul")
                 {
                     Timer.soulsRemaining--;
-                    Timer.currentTime += 3 * 60;
+                    Timer.currentTime += 1 * 60;
 
                     // Spawn a soul prefab that has a script attached.
                     GameObject soul = GameObject.Instantiate(soulModel, new Vector3 (gameObject.transform.position.x, -1, gameObject.transform.position.z), new Quaternion(0, 0, 0, 0));

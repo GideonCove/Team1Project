@@ -6280,6 +6280,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: notebook
       objectReference: {fileID: 0}
+    - target: {fileID: 4538349555224333541, guid: 9bf8570a70203074c890e5ef97ca2673,
+        type: 3}
+      propertyPath: m_TagString
+      value: pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 1455696693883907566, guid: 9bf8570a70203074c890e5ef97ca2673,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6352,6 +6357,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bf8570a70203074c890e5ef97ca2673, type: 3}
+--- !u!1 &1567758717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4538349555224333541, guid: 9bf8570a70203074c890e5ef97ca2673,
+    type: 3}
+  m_PrefabInstance: {fileID: 1567758716}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1567758718
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567758717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.39
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1568709876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7643,6 +7667,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: open_notebook
       objectReference: {fileID: 0}
+    - target: {fileID: 5280402305682328141, guid: 0b012393b2f65364698e1f056337bde6,
+        type: 3}
+      propertyPath: m_TagString
+      value: pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 9159363089035933790, guid: 0b012393b2f65364698e1f056337bde6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7710,6 +7739,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b012393b2f65364698e1f056337bde6, type: 3}
+--- !u!1 &1968886864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5280402305682328141, guid: 0b012393b2f65364698e1f056337bde6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1968886863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1968886865
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968886864}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.003
+  m_Center: {x: 0.004, y: 0, z: 0}
 --- !u!1001 &1975045229
 PrefabInstance:
   m_ObjectHideFlags: 0

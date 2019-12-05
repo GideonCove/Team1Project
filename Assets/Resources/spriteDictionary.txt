@@ -15,3 +15,7 @@ vinegar:vinegar
 baking_soda:baking_soda
 screwdriver:screwdriver
 locker_combo:locker:combo
+open_notebook:open_notebook
+pencil:pencil
+notebook:notebook
+papers:papers
