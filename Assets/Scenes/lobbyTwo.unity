@@ -3658,18 +3658,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c97dfd6ce8738941b902b87e0adc264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1219792175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219792172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2569e5579de23824dbf0ab8b9e524c86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1231374717 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7223447159249219325, guid: 4b4e8307863b1f644b3191a9cefca78b,
@@ -6315,7 +6303,7 @@ MonoBehaviour:
   destinationX: -0.15
   destinationY: 1
   destinationZ: 4.58
-  destinationDirection: 
+  destinationDirection: north
   locked: 0
 --- !u!65 &1997009367
 BoxCollider:
