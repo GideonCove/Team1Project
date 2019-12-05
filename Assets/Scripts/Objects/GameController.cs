@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
 {
     // Create the singleton
     public static GameController instance;
-    private static bool initialLoad = true;
+    public static bool initialLoad = true;
 
     // Settings variables
     public static float brightness = 10;

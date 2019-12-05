@@ -185,7 +185,7 @@ public class SolvePuzzle : MonoBehaviour
             solveText.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
 
             gameController = GameObject.Find("game_controller").GetComponent<GameController>();

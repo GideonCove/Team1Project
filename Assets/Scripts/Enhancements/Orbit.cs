@@ -23,11 +23,17 @@ public class Orbit : MonoBehaviour
 
         if (SolvePuzzle.planetsSolved && isPuzzlePlanet)
         {
-            gameObject.SetActive(true); // makes the planet visible so that people can see it orbit.
+            if (gameObject.GetComponent<MeshRenderer>() != null)
+            {
+                gameObject.GetComponent<MeshRenderer>().enabled = true; // makes the planet visible so that people can see it orbit.
+            }
         }
         else if (!SolvePuzzle.planetsSolved && isPuzzlePlanet)
         {
-            gameObject.SetActive(false); 
+            if (gameObject.GetComponent<MeshRenderer>() != null)
+            {
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
+            }
         }
     }
     
@@ -36,12 +42,13 @@ public class Orbit : MonoBehaviour
         if (SolvePuzzle.planetsSolved)
         {
             orbitAround(); // makes the planets rotate constantly.
-
-            Debug.Log(gameObject.name + " is puzzle planet: " + isPuzzlePlanet);
+            
             if (isPuzzlePlanet)
             {
-                gameObject.SetActive(true);
-                Debug.Log(gameObject.name + " is now active");
+                if (gameObject.GetComponent<MeshRenderer>() != null)
+                {
+                    gameObject.GetComponent<MeshRenderer>().enabled = true;
+                }
             }
         }
     }

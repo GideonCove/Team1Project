@@ -46,7 +46,7 @@ public class Door : MonoBehaviour
             if (gameObject.CompareTag("door") && currentScene == SceneManager.GetActiveScene().name)
             {
 
-                if (doorText.activeInHierarchy == true && Input.GetKeyDown(KeyCode.Space))
+                if (doorText.activeInHierarchy == true && Input.GetKey(KeyCode.Space))
                 {
                     SceneManager.LoadScene(nextLevel);
                     Debug.Log("Scene changed to " + nextLevel);

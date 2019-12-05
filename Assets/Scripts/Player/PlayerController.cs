@@ -68,12 +68,14 @@ public class PlayerController : MonoBehaviour
         {
             itemText.SetActive(true);
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 FindInDatabase();
                 IsItHere();
             }
         }
+
+        
     }
 
     private void OnTriggerExit(Collider other)
