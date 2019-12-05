@@ -174,6 +174,7 @@ public class SolvePuzzle : MonoBehaviour
         if (alreadySolved)
         {
             solveText.SetActive(false);
+
             Destroy(gameObject.GetComponent<SolvePuzzle>());
         }
     }
