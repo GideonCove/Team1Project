@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/* 
+ * AUTHOR(S): Seth, Cameron, Gideon, Zach, Anthony
+ * DATE OF CREATION: 12/4/2019
+ * SCENE(S) WHERE USED: principals, gym, music, playground, science, astronomy, math
+ * OBJECT(S) WHERE USED: soul_canvas
+ * DESCRIPTION: Does an animation for each soul prefab.
+ */
+
 public class SoulAnimation : MonoBehaviour
 {
     private float originalY;

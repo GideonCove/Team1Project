@@ -35,19 +35,6 @@ public class PlayerMovement : MonoBehaviour
     
     void Update()
     {
-        // Temporary debug key for testing purposes REMOVE FOR FINAL BUILD
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            Timer.soulsRemaining--;
-            Timer.currentTime += 3 * 60;
-        }
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            SceneManager.LoadScene("gameOver");
-            GameController.gameOverReason = "Nothing even happened. You forced this, you monster.";
-        }
-
         // Quits game after 2 seconds of holding ESC.
         if (Input.GetKey(KeyCode.Escape))
         {
@@ -56,6 +43,19 @@ public class PlayerMovement : MonoBehaviour
             if (timeHeld >= 2)
             {
                 Application.Quit();
+            }
+        }
+
+        // Fullscreen
+        if (Input.GetKeyDown(KeyCode.F4))
+        {
+            if (Screen.fullScreen)
+            {
+                Screen.fullScreen = false;
+            }
+            else
+            {
+                Screen.fullScreen = true;
             }
         }
 

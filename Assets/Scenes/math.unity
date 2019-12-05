@@ -1463,7 +1463,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 4730e22f4e88f8c41ba4ca7dd9766fe4,
         type: 3}
       propertyPath: m_Name
-      value: cabinet_big
+      value: cabinet
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4730e22f4e88f8c41ba4ca7dd9766fe4,
         type: 3}
@@ -2163,7 +2163,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 6ba2bdd4a6a6f624bbebc22806d281e5,
         type: 3}
       propertyPath: m_Name
-      value: Plant_Textured
+      value: plant
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 6ba2bdd4a6a6f624bbebc22806d281e5,
         type: 3}
@@ -4758,7 +4758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1762278641
 Light:
   m_ObjectHideFlags: 0

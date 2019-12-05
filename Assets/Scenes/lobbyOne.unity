@@ -3487,7 +3487,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: eb001ac6be09fca4f8ba861378624cc8,
         type: 3}
       propertyPath: m_Name
-      value: Plant_Textured
+      value: plant
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: eb001ac6be09fca4f8ba861378624cc8,
         type: 3}
@@ -5894,7 +5894,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 024b853154f37414bbd097aae783b208,
         type: 3}
       propertyPath: m_Name
-      value: Textured_pot
+      value: empty_pot
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 024b853154f37414bbd097aae783b208,
         type: 3}

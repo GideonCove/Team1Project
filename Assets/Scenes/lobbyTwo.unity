@@ -751,7 +751,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 2a9b31a319651b6499f86cfcbeea888e,
         type: 3}
       propertyPath: m_Name
-      value: Drinking_Fountain_Textured
+      value: water_fountain
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2a9b31a319651b6499f86cfcbeea888e,
         type: 3}
@@ -2203,7 +2203,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 6ba2bdd4a6a6f624bbebc22806d281e5,
         type: 3}
       propertyPath: m_Name
-      value: Plant_Textured
+      value: plant
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 6ba2bdd4a6a6f624bbebc22806d281e5,
         type: 3}
@@ -4030,7 +4030,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9c230b327bc2b4f4e8a3e60cca3e7c9f,
         type: 3}
       propertyPath: m_Name
-      value: Resepertary_Desk_Textured
+      value: reception_desk
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9c230b327bc2b4f4e8a3e60cca3e7c9f,
         type: 3}
