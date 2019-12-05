@@ -60,6 +60,7 @@ public class MainMenu : MonoBehaviour
                 AudioListener.volume = gameObject.GetComponent<Slider>().value;
                 break;
             case "restart_button":
+                GameController.gameOverOver = false;
                 SceneManager.LoadScene("mainMenu");
                 break;
         }

@@ -31,6 +31,7 @@ public class ImageShake : MonoBehaviour
         GameController.theItems.Clear();
         GameController.initialLoad = true;
         Timer.soulsRemaining = 7;
+        MGRCheck.mgrSolved = false;
 
         Destroy(GameObject.Find("player_canvas"));
 
